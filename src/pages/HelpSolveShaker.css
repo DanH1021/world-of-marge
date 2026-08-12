@@ -1,0 +1,62 @@
+.unidentified-grid {
+  display: grid;
+  gap: 16px;
+}
+.unidentified-card {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid var(--cream-line);
+  padding: 12px;
+}
+.unidentified-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+.unidentified-card h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.unidentified-card p {
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.solve-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.solve-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.solve-form input,
+.solve-form textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ink);
+  padding: 10px 12px;
+  border: 1px solid var(--cream-line);
+  background: var(--paper);
+}
+.solve-note {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.solve-success h3 { margin-bottom: 10px; }

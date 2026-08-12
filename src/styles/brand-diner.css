@@ -1,0 +1,30 @@
+/* ==========================================================================
+   REAL BRAND — Marge's Diner (Fargo + Ottertail)
+   Colors sampled directly from the provided logo artwork (deep maroon
+   script outline, red + gold/mustard neon inner strokes, bright orange
+   banner, white "DINER" lettering). Scoped to a wrapper class so only the
+   Diner pages use it. Per the brief, Ottertail uses the same Diner brand —
+   lake-country feeling comes through in photography/copy, not a separate
+   palette.
+
+   Type is unchanged (still the umbrella Fraunces/Inter placeholder) — no
+   Diner-specific typeface was provided, only the logo mark and colors.
+   ========================================================================== */
+
+.brand-diner {
+  --paper: #fbf1e4;        /* warm cream, diner-counter feel */
+  --paper-warm: #f5e2c3;
+  --paper-deep: #ecce9a;
+  --ink: #2a0e0e;          /* deep maroon-black, from the logo outline */
+  --ink-soft: #5c2a18;
+  --rust: #ff560b;         /* banner orange — primary accent */
+  --rust-dark: #d9450a;
+  --forest: #fb2f24;       /* neon red — secondary accent */
+  --forest-dark: #2a0e0e;
+  --gold: #fabd62;         /* neon gold/mustard */
+  --gold-soft: #fddca8;
+  --cream-line: rgba(42, 14, 14, 0.16);
+
+  background: var(--paper);
+  color: var(--ink);
+}

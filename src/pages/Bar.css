@@ -1,0 +1,35 @@
+.bar-page {
+  background: #130c09;
+  color: #f5ece2;
+}
+.bar-section { background: #130c09; }
+.bar-prose p { color: rgba(245, 236, 226, 0.82); }
+.bar-prose p:first-of-type { color: #f5ece2; }
+.bar-panel {
+  background: #1e140f;
+  border-color: rgba(245, 236, 226, 0.16);
+  color: #f5ece2;
+}
+.bar-panel h3 { color: var(--gold-soft); }
+.bar-panel .info-row { border-top-color: rgba(245, 236, 226, 0.16); }
+.bar-panel dt { color: rgba(245, 236, 226, 0.6); }
+
+.bar-badge {
+  border-color: rgba(245, 236, 226, 0.32);
+  color: var(--gold-soft);
+}
+
+.bar-page .related-strip {
+  background: #1e140f;
+}
+
+.bar-logo-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px 8px;
+  background: #130c09;
+}
+.bar-logo-wrap img {
+  width: 100%;
+  max-width: 420px;
+}

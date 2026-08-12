@@ -1,0 +1,44 @@
+.shaker-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--paper-warm);
+  border: 1px solid var(--cream-line);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.shaker-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-tight);
+}
+.shaker-card-media {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.shaker-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shaker-card-body {
+  padding: 14px 16px 16px;
+}
+.shaker-card-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 4px;
+}
+.shaker-card-body h3 {
+  font-size: 1.02rem;
+  margin-bottom: 2px;
+}
+.shaker-card-decade {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   REAL BRAND — Marge's Bar
+   Colors sampled from the provided neon-sign logo (black background, red
+   neon tube, gold/amber inner glow). Only the accent tokens are scoped here
+   — the page background itself is hardcoded dark in Bar.css (same pattern
+   as the Lucky Lounge), since --paper/--ink are reused elsewhere as
+   "light background" tokens and inverting them globally would break
+   PageHero's light-text-over-photo styling.
+   ========================================================================== */
+
+.brand-bar {
+  --rust: #ff3b3b;        /* neon red — primary accent */
+  --rust-dark: #d92b2b;
+  --forest: #ffd16c;      /* neon gold/amber — secondary accent */
+  --forest-dark: #caa050;
+  --gold: #ffd16c;
+  --gold-soft: #ffd98a;
+}

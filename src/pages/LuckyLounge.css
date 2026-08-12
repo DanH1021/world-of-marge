@@ -1,0 +1,48 @@
+.lucky-page {
+  background: #071a2b;
+  color: var(--paper);
+}
+.lucky-section { background: #071a2b; }
+.lucky-prose p { color: rgba(243, 235, 221, 0.82); }
+.lucky-prose p:first-of-type { color: var(--paper); }
+.lucky-panel {
+  background: #0f2c46;
+  border-color: rgba(243, 235, 221, 0.16);
+  color: var(--paper);
+}
+.lucky-panel h3 { color: var(--gold-soft); }
+.lucky-panel .info-row { border-top-color: rgba(243, 235, 221, 0.16); }
+.lucky-panel dt { color: rgba(243, 235, 221, 0.6); }
+
+.badge-dark {
+  border-color: rgba(243, 235, 221, 0.32);
+  color: var(--gold-soft);
+}
+
+.lucky-logo-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 36px 24px 0;
+  background: #071a2b;
+}
+.lucky-logo-wrap img {
+  width: 100%;
+  max-width: 320px;
+}
+
+.lucky-suits {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0 0;
+  font-size: 1.6rem;
+  color: rgba(243, 235, 221, 0.35);
+  background: #071a2b;
+}
+
+.lucky-stainedglass { padding-top: 0; }
+.glass-strip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 10px;
+}

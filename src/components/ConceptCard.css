@@ -1,0 +1,81 @@
+.concept-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper-warm);
+  border: 1px solid var(--cream-line);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.concept-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.concept-card-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-bottom: 4px solid var(--rust);
+}
+.tone-forest .concept-card-media { border-bottom-color: var(--forest); }
+.tone-gold .concept-card-media { border-bottom-color: var(--gold); }
+.tone-ink .concept-card-media { border-bottom-color: var(--ink); }
+
+.concept-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.concept-card:hover .concept-card-media img {
+  transform: scale(1.05);
+}
+
+.concept-card-body {
+  padding: 22px 22px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.concept-card-tag {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 8px;
+}
+.tone-forest .concept-card-tag { color: var(--forest); }
+.tone-gold .concept-card-tag { color: var(--gold); }
+.tone-ink .concept-card-tag { color: var(--ink-soft); }
+
+.concept-card-body h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+}
+.concept-card-place {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+}
+.concept-card-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.concept-card-cta svg {
+  transition: transform 0.2s ease;
+}
+.concept-card:hover .concept-card-cta svg {
+  transform: translateX(4px);
+}
+
+.concept-card-default { }

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   REAL BRAND — Marge's Supper Club & Lucky Lounge
+   Approved colors + type from the brand guide. Scoped to a wrapper class so
+   only the Supper Club and Lucky Lounge pages use it; the rest of the site
+   keeps the World of Marge's umbrella placeholder system until each other
+   concept's real brand assets arrive.
+
+   NOTE: the real hand-lettered "Marge's" logo mark is not yet wired in here
+   — per the brand guide it must never be redrawn/re-typeset, only the
+   actual provided artwork file used. Swap it into Header/PageHero once you
+   have the file.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+.brand-supper-club {
+  --paper: #f3ebdd;       /* Antique Ivory */
+  --paper-warm: #ecdfc4;
+  --paper-deep: #e3d1a9;
+  --ink: #252525;         /* Charcoal */
+  --ink-soft: #5a3a28;    /* Walnut */
+  --rust: #c79a3b;        /* Brass Gold — primary accent */
+  --rust-dark: #a67f2c;
+  --forest: #32586e;      /* Endless Sea */
+  --forest-dark: #0a2238; /* Midnight Navy */
+  --gold: #c79a3b;
+  --gold-soft: #ddbd76;
+  --cream-line: rgba(37, 37, 37, 0.16);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  background: var(--paper);
+  color: var(--ink);
+}

@@ -1,0 +1,4 @@
+# Phase 1 preview build — not ready for search engines yet.
+# Remove/update this once the site is ready to go live for real.
+User-agent: *
+Disallow: /

@@ -1,0 +1,160 @@
+import { images } from './placeholderImages';
+
+// ==========================================================================
+// PLACEHOLDER DIGITAL SHAKER MUSEUM RECORDS
+// Phase 1 sample data. Replace with real cataloged shakers + real photos
+// once the collection is inventoried — the shape (fields) matches what the
+// brief asks the admin panel to eventually manage.
+// ==========================================================================
+
+export const shakerCategories = [
+  'Animals',
+  'People',
+  'Food',
+  'Travel',
+  'Holiday',
+  'Minnesota',
+  'North Dakota',
+  'Weird Stuff',
+  'Unknown',
+];
+
+export const shakers = [
+  {
+    id: 'sp-001',
+    name: 'Roosting Rooster Pair',
+    category: 'Animals',
+    manufacturer: 'Unmarked',
+    decade: '1960s',
+    material: 'Ceramic',
+    origin: 'Estate sale, Fargo ND',
+    rarity: 'Common',
+    funFact: 'One of at least four rooster pairs in the collection. Nobody knows why.',
+    margeCommentary: 'He looks judgmental. I respect that in a shaker.',
+    image: images.shakerAnimals,
+  },
+  {
+    id: 'sp-002',
+    name: 'Waving Lucy & Ethel',
+    category: 'People',
+    manufacturer: "Enesco",
+    decade: '1970s',
+    material: 'Ceramic',
+    origin: 'Donated by a regular',
+    rarity: 'Uncommon',
+    funFact: 'Arrived wrapped in a 1994 issue of the Fargo Forum.',
+    margeCommentary: 'Best friends forever, or at least until someone knocks one off the shelf.',
+    image: images.shakerCollection1,
+  },
+  {
+    id: 'sp-003',
+    name: 'Corn on the Cob Couple',
+    category: 'Food',
+    manufacturer: 'Unmarked',
+    decade: '1950s',
+    material: 'Painted plaster',
+    origin: 'Midwest farm auction',
+    rarity: 'Common',
+    funFact: 'A Midwestern diner classic. We own six pairs of these.',
+    margeCommentary: 'Corn-fed and proud of it.',
+    image: images.shakerCollection2,
+  },
+  {
+    id: 'sp-004',
+    name: 'Souvenir Mount Rushmore',
+    category: 'Travel',
+    manufacturer: 'Unmarked',
+    decade: '1980s',
+    material: 'Resin',
+    origin: 'South Dakota road trip',
+    rarity: 'Common',
+    funFact: 'Technically four presidents, two shakers.',
+    margeCommentary: 'The most patriotic thing on any table in Fargo.',
+    image: images.shakerVintageShelf,
+  },
+  {
+    id: 'sp-005',
+    name: 'Santa & Mrs. Claus',
+    category: 'Holiday',
+    manufacturer: 'Napco',
+    decade: '1960s',
+    material: 'Ceramic',
+    origin: 'Estate sale',
+    rarity: 'Common',
+    funFact: 'On display year-round. We don’t believe in seasons here.',
+    margeCommentary: 'He knows if you finished your salad bar plate.',
+    image: images.shakerCollection1,
+  },
+  {
+    id: 'sp-006',
+    name: 'Minnesota Loon Pair',
+    category: 'Minnesota',
+    manufacturer: 'Unmarked',
+    decade: '1970s',
+    material: 'Ceramic',
+    origin: 'Ottertail lake cabin cleanout',
+    rarity: 'Uncommon',
+    funFact: 'Found in a box marked "DO NOT THROW AWAY" in three different handwritings.',
+    margeCommentary: 'Technically a lake bird. Technically the whole reason we opened a diner in Ottertail.',
+    image: images.shakerVintageShelf,
+  },
+  {
+    id: 'sp-007',
+    name: 'Bison of the Plains',
+    category: 'North Dakota',
+    manufacturer: 'Unmarked',
+    decade: '1960s',
+    material: 'Painted chalkware',
+    origin: 'Fargo estate sale',
+    rarity: 'Rare',
+    funFact: 'Missing one horn. We consider that a feature.',
+    margeCommentary: 'A North Dakota icon, slightly worse for wear, just like the rest of us by February.',
+    image: images.shakerAnimals,
+  },
+  {
+    id: 'sp-008',
+    name: 'Unidentified Mustachioed Gentleman',
+    category: 'Weird Stuff',
+    manufacturer: 'Unknown',
+    decade: 'Unknown',
+    material: 'Ceramic',
+    origin: 'Nobody remembers',
+    rarity: 'Unknown',
+    funFact: 'Missing his pepper counterpart since approximately forever.',
+    margeCommentary: "We don't know who he is. We're not sure we want to know.",
+    image: images.shakerCollection2,
+  },
+  {
+    id: 'sp-009',
+    name: 'Bowling Pin Duo',
+    category: 'Weird Stuff',
+    manufacturer: 'Unmarked',
+    decade: '1970s',
+    material: 'Wood',
+    origin: 'Thrift store, Moorhead MN',
+    rarity: 'Common',
+    funFact: 'One is slightly taller than the other. We have measured. It is deliberate.',
+    margeCommentary: 'A perfect 7-10 split of a find.',
+    image: images.shakerCollection1,
+  },
+  {
+    id: 'sp-010',
+    name: 'Mystery Owl Pair',
+    category: 'Unknown',
+    manufacturer: 'Unmarked',
+    decade: 'Unknown',
+    material: 'Ceramic',
+    origin: 'Found in a booth cushion, no joke',
+    rarity: 'Rare',
+    funFact: 'We genuinely do not know how these ended up here.',
+    margeCommentary: 'Help us solve this one. We mean it.',
+    image: images.shakerAnimals,
+  },
+];
+
+export function randomShaker(excludeId) {
+  const pool = excludeId ? shakers.filter((s) => s.id !== excludeId) : shakers;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+export const shakerOfTheMonth = shakers[5];

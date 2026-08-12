@@ -1,0 +1,68 @@
+.shaker-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 14, 8, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 300;
+}
+.shaker-modal {
+  background: var(--paper);
+  max-width: 720px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  box-shadow: var(--shadow-soft);
+}
+.shaker-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.shaker-modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 220px;
+}
+.shaker-modal-body {
+  padding: 28px;
+}
+.shaker-modal-facts {
+  margin: 16px 0;
+  display: grid;
+  gap: 8px;
+}
+.shaker-modal-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.86rem;
+  padding: 6px 0;
+  border-top: 1px solid var(--cream-line);
+}
+.shaker-modal-facts div:first-child { border-top: none; }
+.shaker-modal-facts dt { color: var(--ink-soft); font-weight: 600; }
+.shaker-modal-facts dd { margin: 0; text-align: right; }
+.shaker-modal-fact { font-size: 0.9rem; }
+.shaker-modal-body .pull-quote { font-size: 1.15rem; margin: 16px 0 0; }
+
+@media (max-width: 620px) {
+  .shaker-modal { grid-template-columns: 1fr; }
+  .shaker-modal-media img { min-height: 200px; }
+}

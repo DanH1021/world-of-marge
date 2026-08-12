@@ -1,0 +1,15 @@
+.menu-section {
+  background: var(--paper-warm);
+  border-top: 1px solid var(--cream-line);
+  border-bottom: 1px solid var(--cream-line);
+}
+
+.supper-club-logo-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 36px 24px 4px;
+}
+.supper-club-logo-wrap img {
+  width: 100%;
+  max-width: 380px;
+}

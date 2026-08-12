@@ -1,0 +1,9 @@
+.diner-logo-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 36px 24px 4px;
+}
+.diner-logo-wrap img {
+  width: 100%;
+  max-width: 420px;
+}

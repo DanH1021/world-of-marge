@@ -1,0 +1,68 @@
+.quiz-container {
+  max-width: 680px;
+}
+.quiz-step h2, .quiz-result h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 24px;
+}
+.quiz-options {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.quiz-option {
+  padding: 20px 28px;
+  border: 2px solid var(--ink);
+  background: transparent;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.quiz-option:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+.quiz-back {
+  display: inline-block;
+  margin-top: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  padding: 0;
+}
+
+.itinerary-list {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+.itinerary-list li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--cream-line);
+}
+.itinerary-list li:first-child { border-top: none; }
+.itinerary-time {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--rust);
+}
+.itinerary-activity a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.quiz-result-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 520px) {
+  .itinerary-list li { grid-template-columns: 90px 1fr; }
+}
