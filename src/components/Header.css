@@ -16,26 +16,17 @@
 
 .wordmark {
   display: flex;
-  flex-direction: column;
   text-decoration: none;
   color: var(--ink);
   line-height: 1;
 }
-.wordmark-eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.62rem;
+.wordmark-hand {
+  font-family: var(--font-hand);
   font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-size: 2rem;
   color: var(--rust);
-  order: -1;
-  margin-bottom: 4px;
-}
-.wordmark-script {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.9rem;
+  display: inline-block;
+  transform: rotate(-2deg);
 }
 
 .nav-toggle {
@@ -101,8 +92,11 @@
 }
 .nav-link:hover, .nav-parent:hover, .nav-link.is-active {
   color: var(--rust);
-  background: rgba(189, 74, 38, 0.08);
+  background: rgba(156, 43, 60, 0.08);
 }
+
+.primary-nav > ul > li:nth-child(odd) { transform: rotate(-1deg); }
+.primary-nav > ul > li:nth-child(even) { transform: rotate(1.4deg); }
 
 .has-children {
   position: relative;
@@ -144,6 +138,14 @@
 
 .nav-cta {
   white-space: nowrap;
+  border-radius: 0 !important;
+  border: 2px solid var(--ink) !important;
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(-1.5deg);
+}
+.nav-cta:hover {
+  transform: rotate(-1.5deg) translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
 }
 
 @media (max-width: 980px) {

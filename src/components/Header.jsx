@@ -21,12 +21,11 @@ export default function Header() {
   }
 
   return (
-    <header className="site-header" role="banner">
+    <header className="site-header brand-umbrella" role="banner">
       <a href="#main-content" className="skip-link">Skip to main content</a>
       <div className="header-bar container">
         <Link to="/" className="wordmark" aria-label="World of Marge's — home">
-          <span className="wordmark-script">Marge&rsquo;s</span>
-          <span className="wordmark-eyebrow">World of</span>
+          <span className="wordmark-hand">World of Marge&rsquo;s</span>
         </Link>
 
         <button
@@ -90,6 +89,7 @@ export default function Header() {
           </Link>
         </nav>
       </div>
+      <div className="header-scallop scallop-trim" aria-hidden="true" />
     </header>
   );
 }

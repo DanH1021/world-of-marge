@@ -13,15 +13,18 @@
 .quiz-option {
   padding: 20px 28px;
   border: 2px solid var(--ink);
-  background: transparent;
+  background: var(--paper);
   font-family: var(--font-display);
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .quiz-option:hover {
   background: var(--ink);
   color: var(--paper);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
 }
 .quiz-back {
   display: inline-block;

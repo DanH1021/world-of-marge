@@ -17,7 +17,7 @@ export default function HelpSolveShaker() {
   }
 
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="For Unidentified Pieces"
         title="Help Us Solve This Shaker"
@@ -98,6 +98,6 @@ export default function HelpSolveShaker() {
           <Link to="/the-shakers/museum" className="btn btn-outline">Back to the Digital Shaker Museum</Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }

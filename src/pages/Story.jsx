@@ -6,7 +6,7 @@ import './Story.css';
 
 export default function Story() {
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="How It All Started"
         title="The Marge's Story"
@@ -41,6 +41,6 @@ export default function Story() {
           <p className="timeline-closing">{TIMELINE_CLOSING_LINE}</p>
         </div>
       </section>
-    </>
+    </div>
   );
 }

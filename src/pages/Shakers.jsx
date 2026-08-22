@@ -7,7 +7,7 @@ import './Shakers.css';
 
 export default function Shakers() {
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="The Salt & Pepper Collection"
         title="Yes. Those Are All Salt & Pepper Shakers."
@@ -70,6 +70,6 @@ export default function Shakers() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

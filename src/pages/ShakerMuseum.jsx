@@ -28,7 +28,7 @@ export default function ShakerMuseum() {
   }, [query, category]);
 
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="The Digital Shaker Museum"
         title="A Growing, Searchable Collection"
@@ -97,6 +97,6 @@ export default function ShakerMuseum() {
       </section>
 
       {selected && <ShakerModal shaker={selected} onClose={() => setSelected(null)} />}
-    </>
+    </div>
   );
 }

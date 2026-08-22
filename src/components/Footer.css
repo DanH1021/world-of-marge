@@ -13,15 +13,17 @@
 }
 
 .footer-wordmark {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.6rem;
-  display: block;
+  font-family: var(--font-hand);
+  font-weight: 700;
+  font-size: 2.1rem;
+  display: inline-block;
   margin-bottom: 10px;
+  color: var(--gold-soft);
+  transform: rotate(-1.5deg);
 }
 
 .footer-tagline {
-  color: rgba(244, 236, 221, 0.72);
+  color: rgba(251, 243, 227, 0.72);
   max-width: 320px;
   font-size: 0.92rem;
 }
@@ -72,7 +74,7 @@
 }
 
 .site-footer .rule {
-  border-top-color: rgba(244, 236, 221, 0.18);
+  border-top-color: rgba(251, 243, 227, 0.18);
 }
 
 .footer-bottom {
@@ -84,9 +86,9 @@
   gap: 16px;
 }
 .footer-closing {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.15rem;
+  font-family: var(--font-hand);
+  font-weight: 600;
+  font-size: 1.4rem;
   margin: 0;
 }
 .footer-legal {
@@ -94,10 +96,10 @@
   align-items: center;
   gap: 20px;
   font-size: 0.8rem;
-  color: rgba(244, 236, 221, 0.6);
+  color: rgba(251, 243, 227, 0.6);
 }
 .footer-legal a {
-  color: rgba(244, 236, 221, 0.6);
+  color: rgba(251, 243, 227, 0.6);
   text-decoration: none;
 }
 .footer-legal a:hover { color: var(--paper); }

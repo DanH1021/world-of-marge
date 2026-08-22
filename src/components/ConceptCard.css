@@ -13,6 +13,34 @@
   box-shadow: var(--shadow-soft);
 }
 
+/* Scrapbook Collector: white polaroid-style frame + a small tone-colored
+   marker instead of a flat editorial accent bar. */
+.brand-umbrella .concept-card {
+  background: #ffffff;
+  border: none;
+  padding: 10px 10px 0;
+  box-shadow: var(--shadow-tight);
+}
+.brand-umbrella .family-grid > .concept-card:nth-child(3n+1) { transform: rotate(-1deg); }
+.brand-umbrella .family-grid > .concept-card:nth-child(3n+2) { transform: rotate(1.2deg); }
+.brand-umbrella .family-grid > .concept-card:nth-child(3n) { transform: rotate(-1.6deg); }
+.brand-umbrella .concept-card:hover {
+  transform: translateY(-4px) rotate(0deg);
+}
+.brand-umbrella .concept-card-body {
+  padding: 18px 12px 22px;
+}
+.brand-umbrella .concept-card-tag::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
 .concept-card-media {
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -21,6 +49,7 @@
 .tone-forest .concept-card-media { border-bottom-color: var(--forest); }
 .tone-gold .concept-card-media { border-bottom-color: var(--gold); }
 .tone-ink .concept-card-media { border-bottom-color: var(--ink); }
+.brand-umbrella .concept-card-media { border-bottom: none; margin-bottom: 2px; }
 
 .concept-card-media img {
   width: 100%;

@@ -5,7 +5,7 @@ import { concepts } from '../data/site';
 
 export default function EatAndDrink() {
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="Eat & Drink"
         title="Find Your Marge's"
@@ -40,6 +40,6 @@ export default function EatAndDrink() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

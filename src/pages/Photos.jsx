@@ -6,7 +6,7 @@ import './Photos.css';
 
 export default function Photos() {
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="Take a Look Around"
         title="Photos"
@@ -32,6 +32,6 @@ export default function Photos() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

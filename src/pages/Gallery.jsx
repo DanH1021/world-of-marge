@@ -14,7 +14,7 @@ export default function Gallery() {
   const { concept, photos } = gallery;
 
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow={concept.place}
         title={concept.name}
@@ -53,6 +53,6 @@ export default function Gallery() {
           onNext={() => setIndex((i) => (i + 1) % photos.length)}
         />
       )}
-    </>
+    </div>
   );
 }

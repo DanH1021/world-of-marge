@@ -1,0 +1,63 @@
+/* ==========================================================================
+   WORLD OF MARGE'S — Umbrella Hub "Scrapbook Collector" system
+   Scoped to a .brand-umbrella wrapper class, exactly like brand-diner.css /
+   brand-bar.css / brand-supper-club.css scope their real brand tokens. This
+   keeps the umbrella's own look (header, footer, homepage, Photos, Shakers,
+   Story, Find Your Marge's) fully independent of :root — the real-branded
+   concept pages (Diner, Bar, Supper Club, Lucky Lounge) never see these
+   tokens and are untouched by this redesign.
+
+   Direction: warm hospitality + the actual weirdness of the place (shaker
+   walls, plate collections, doilies) — scrapbook/collector aesthetic, not
+   travel-magazine editorial. Replaces the old rust/forest/gold placeholder
+   palette and Fraunces/Inter type with a cranberry/teal/mustard system and
+   Abril Fatface + Caveat + Libre Franklin.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@500;600;700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+
+.brand-umbrella {
+  --paper: #fbf3e3;
+  --paper-warm: #f2e6c9;
+  --paper-deep: #ecdcb4;
+  --ink: #2a1f1a;
+  --ink-soft: #5c4a3a;
+
+  --rust: #9c2b3c;        /* cranberry — primary accent */
+  --rust-dark: #7a1f2e;
+  --forest: #2f6b66;      /* teal — secondary accent */
+  --forest-dark: #1c433f;
+  --gold: #d9a441;        /* mustard */
+  --gold-soft: #e8c274;
+  --cream-line: rgba(42, 31, 26, 0.16);
+
+  --shadow-soft: 0 10px 26px rgba(42, 31, 26, 0.2);
+  --shadow-tight: 0 6px 14px rgba(42, 31, 26, 0.16);
+
+  --font-display: 'Abril Fatface', Georgia, serif;
+  --font-body: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  --wallpaper-dot-a: rgba(156, 43, 60, 0.12);
+  --wallpaper-dot-b: rgba(47, 107, 102, 0.1);
+  --tape-mustard: rgba(217, 164, 65, 0.55);
+  --tape-teal: rgba(47, 107, 102, 0.45);
+  --tape-cranberry: rgba(156, 43, 60, 0.4);
+
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 10px 10px, var(--wallpaper-dot-a) 3px, transparent 4px),
+    radial-gradient(circle at 30px 30px, var(--wallpaper-dot-b) 3px, transparent 4px);
+  background-size: 40px 40px;
+  color: var(--ink);
+}
+
+/* h1–h4 already pick up --font-display via global.css; Abril Fatface only
+   ships weight 400, so keep headings from being synthetically bolded. */
+.brand-umbrella h1,
+.brand-umbrella h2,
+.brand-umbrella h3,
+.brand-umbrella h4 {
+  font-weight: 400;
+  letter-spacing: 0;
+}

@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Scrapbook Collector — reusable decorative primitives
+   Only ever used inside .brand-umbrella-wrapped markup, so these classes
+   never reach the real-branded concept pages.
+   ========================================================================== */
+
+/* ---- Tilt utilities (small rotation variety across cards/photos) ---- */
+.tilt-a { transform: rotate(-1.2deg); }
+.tilt-b { transform: rotate(1.6deg); }
+.tilt-c { transform: rotate(-2.6deg); }
+.tilt-d { transform: rotate(2.4deg); }
+.tilt-e { transform: rotate(-3.4deg); }
+.tilt-f { transform: rotate(3.2deg); }
+
+/* ---- Scallop trim bar (pinked-edge fabric feel) ---- */
+.scallop-trim {
+  height: 14px;
+  width: 100%;
+  background: radial-gradient(circle at 10px 0px, transparent 10px, var(--forest) 11px) 0 0 / 20px 14px repeat-x;
+}
+.scallop-trim.scallop-cranberry {
+  background-image: radial-gradient(circle at 10px 0px, transparent 10px, var(--rust) 11px);
+}
+.scallop-trim.scallop-mustard {
+  background-image: radial-gradient(circle at 10px 0px, transparent 10px, var(--gold) 11px);
+}
+
+/* ---- Index-card panel (torn-paper / note-card feel) ---- */
+.index-card {
+  background: var(--paper-warm);
+  padding: 38px 36px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---- Washi tape strip ---- */
+.washi-tape {
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  background: var(--tape-mustard);
+  z-index: 3;
+}
+.washi-tape.washi-teal { background: var(--tape-teal); }
+.washi-tape.washi-cranberry { background: var(--tape-cranberry); }
+
+/* ---- Polaroid photo frame ---- */
+.polaroid {
+  background: #ffffff;
+  padding: 12px 12px 36px;
+  box-shadow: var(--shadow-soft);
+}
+.polaroid-photo {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+.polaroid-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.polaroid-caption {
+  font-family: var(--font-hand);
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-align: center;
+  color: var(--ink);
+  margin: 10px 0 0;
+}
+
+/* ---- Sticky-note callout (Marge's commentary, quotes) ---- */
+.sticky-note {
+  background: var(--gold);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-tight);
+}
+.sticky-note p {
+  font-family: var(--font-hand);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---- Rubber-stamp circular button ---- */
+.btn-stamp {
+  width: 108px;
+  height: 108px;
+  flex: none;
+  border-radius: 50%;
+  border: 3px double var(--rust);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--rust);
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.btn-stamp:hover {
+  background: var(--rust);
+  color: var(--paper);
+  transform: rotate(-4deg);
+}
+
+/* ---- Ticket-stub button ---- */
+.btn-ticket {
+  display: inline-flex;
+  align-items: center;
+  border: 2px dashed var(--forest);
+  color: var(--forest-dark);
+  background: transparent;
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.btn-ticket:hover {
+  background: var(--forest);
+  color: var(--paper);
+}
+
+/* ---- Handwritten accent line ---- */
+.hand-line {
+  font-family: var(--font-hand);
+  font-weight: 600;
+}
+
+/* ---- Scoped button treatment: gives every plain .btn on umbrella pages
+   (Home, Photos, Shakers, Story, Find Your Marge's, ...) the scrapbook
+   hard-shadow language, without touching the base .btn rules that the
+   real-branded concept pages also use. ---- */
+.brand-umbrella .btn {
+  border-radius: 0;
+}
+.brand-umbrella .btn-primary {
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.brand-umbrella .btn-primary:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.brand-umbrella .btn-outline {
+  border: 2px dashed currentColor;
+}
+.brand-umbrella .btn-outline:hover {
+  border-style: solid;
+}

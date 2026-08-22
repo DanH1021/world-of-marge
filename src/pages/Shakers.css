@@ -21,7 +21,9 @@
 .shaker-month-card {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  border: 1px solid var(--cream-line);
+  background: #ffffff;
+  border: none;
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
 }
 .shaker-month-card img {
@@ -29,6 +31,8 @@
   height: 100%;
   object-fit: cover;
   min-height: 280px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 .shaker-month-body {
   padding: 36px;

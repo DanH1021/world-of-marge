@@ -6,6 +6,8 @@ import './styles/pages.css'
 import './styles/brand-supper-club.css'
 import './styles/brand-diner.css'
 import './styles/brand-bar.css'
+import './styles/brand-umbrella.css'
+import './styles/scrapbook.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

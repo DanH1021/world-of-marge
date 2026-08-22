@@ -19,7 +19,7 @@ export default function FindYourMarges() {
   }
 
   return (
-    <>
+    <div className="brand-umbrella">
       <PageHero
         eyebrow="Interactive Feature"
         title="Plan My Marge's Day"
@@ -81,6 +81,6 @@ export default function FindYourMarges() {
           )}
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -1,59 +1,58 @@
+/* ---- Hero ---- */
 .home-hero {
-  position: relative;
-  min-height: 92vh;
-  display: flex;
-  align-items: flex-end;
-  color: var(--paper);
-  overflow: hidden;
+  padding: 60px 0 8px;
 }
-.home-hero-bg {
-  position: absolute;
-  inset: 0;
+.home-hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
 }
-.home-hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.home-hero-content {
-  position: relative;
-  padding-bottom: 96px;
-  max-width: 780px;
-}
-.home-hero-content h1 {
-  font-size: clamp(3rem, 8vw, 5.6rem);
-  color: var(--paper);
-  margin-bottom: 0.2em;
+.home-hero-card h1 {
+  color: var(--rust);
+  font-size: clamp(2.4rem, 5.4vw, 3.8rem);
+  margin-bottom: 0.28em;
 }
 .home-hero-line {
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  margin-bottom: 22px;
-  color: var(--gold-soft);
+  font-size: 1.4rem;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
 }
 .home-hero-intro {
-  font-size: 1.15rem;
-  max-width: 560px;
-  color: rgba(244, 236, 221, 0.94);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 460px;
+  margin-bottom: 16px;
 }
 .home-hero-welcome {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: var(--rust-dark);
   margin-bottom: 0;
 }
+.home-hero-photo {
+  position: relative;
+  padding-top: 20px;
+}
+.home-hero-photo .polaroid {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.home-hero-tape {
+  top: -4px;
+  left: 40px;
+  transform: rotate(-8deg);
+}
 
-@media (max-width: 640px) {
-  .home-hero { min-height: 78vh; }
-  .home-hero-content { padding-bottom: 56px; }
+@media (max-width: 780px) {
+  .home-hero-inner { grid-template-columns: 1fr; }
 }
 
 /* ---- Where are you today ---- */
 .where-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 26px;
 }
 .where-card {
   position: relative;
@@ -62,6 +61,9 @@
   overflow: hidden;
   text-decoration: none;
   color: var(--paper);
+  border: 6px solid var(--paper);
+  box-sizing: border-box;
+  box-shadow: var(--shadow-soft);
 }
 .where-card img {
   width: 100%;
@@ -78,13 +80,13 @@
   padding: 28px;
 }
 .where-card-body h3 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--paper);
 }
 .where-path {
   font-size: 0.86rem;
   font-weight: 600;
-  color: rgba(244, 236, 221, 0.9);
+  color: rgba(251, 243, 227, 0.92);
   margin-bottom: 16px;
 }
 .where-note {
@@ -98,6 +100,90 @@
   .where-grid { grid-template-columns: 1fr; }
 }
 
+/* ---- Find Your Inner Marge ---- */
+.inner-marge-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 34px;
+}
+.inner-marge-head .eyebrow { display: block; }
+.inner-marge-sub {
+  font-size: 1.25rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.inner-marge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.inner-marge-card {
+  width: 198px;
+  background: #ffffff;
+  padding: 22px 16px 24px;
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.inner-marge-card:hover {
+  box-shadow: 0 16px 30px rgba(42, 31, 26, 0.3);
+}
+.inner-marge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--paper-warm);
+  color: var(--rust);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.inner-marge-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+  color: var(--rust);
+}
+.inner-marge-card p.hand-line {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+.inner-marge-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--forest-dark);
+  margin-top: auto;
+}
+.inner-marge-dark {
+  background: var(--ink);
+  color: var(--paper);
+}
+.inner-marge-dark .inner-marge-icon {
+  background: rgba(251, 243, 227, 0.12);
+  color: var(--gold);
+}
+.inner-marge-dark h3 { color: var(--gold); }
+.inner-marge-dark p.hand-line { color: rgba(251, 243, 227, 0.82); }
+.inner-marge-dark .inner-marge-label { color: var(--gold-soft); }
+
+@media (max-width: 900px) {
+  .inner-marge-card { width: 44%; }
+}
+@media (max-width: 560px) {
+  .inner-marge-card { width: 100%; }
+}
+
 /* ---- Shaker teaser ---- */
 .shaker-teaser {
   background: var(--paper-deep);
@@ -109,23 +195,42 @@
   align-items: center;
 }
 .shaker-teaser-media {
-  aspect-ratio: 1;
-  overflow: hidden;
-  border: 1px solid var(--cream-line);
+  position: relative;
+  min-height: 340px;
 }
-.shaker-teaser-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.shaker-photo-a {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 62%;
+  z-index: 1;
+}
+.shaker-photo-b {
+  position: absolute;
+  left: 44%;
+  top: 66px;
+  width: 54%;
+  z-index: 2;
+}
+.shaker-photo-tape {
+  top: -6px;
+  left: 32px;
+  transform: rotate(-6deg);
+}
+.shaker-quote {
+  max-width: 420px;
+  margin: 20px 0 24px;
 }
 .shaker-teaser-actions {
   display: flex;
-  gap: 14px;
+  align-items: center;
+  gap: 18px;
   flex-wrap: wrap;
   margin-top: 8px;
 }
 @media (max-width: 800px) {
   .shaker-teaser-inner { grid-template-columns: 1fr; }
+  .shaker-teaser-media { min-height: 300px; margin-bottom: 20px; }
 }
 
 /* ---- Story teaser ---- */
@@ -146,4 +251,4 @@
   flex-wrap: wrap;
 }
 .plan-cta h2 { color: var(--paper); }
-.plan-cta p { color: rgba(244, 236, 221, 0.85); margin-bottom: 0; }
+.plan-cta p { color: rgba(251, 243, 227, 0.85); margin-bottom: 0; }

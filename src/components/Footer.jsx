@@ -4,7 +4,8 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="site-footer" role="contentinfo">
+    <footer className="site-footer brand-umbrella" role="contentinfo">
+      <div className="scallop-trim scallop-mustard" aria-hidden="true" />
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
