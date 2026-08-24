@@ -1,16 +1,13 @@
 import { Link } from 'react-router-dom';
 import { images } from '../data/placeholderImages';
 import { conceptList, concepts } from '../data/site';
-import { shakers, shakerOfTheMonth } from '../data/shakers';
 import ConceptCard from '../components/ConceptCard';
 import './Home.css';
 
-const rooster = shakers[0];
-
 const innerMarges = [
   {
-    archetype: 'The Regular',
-    line: 'You’ve got a booth. The server knows your order. You’ve never once opened the menu.',
+    archetype: 'The Early Bird',
+    line: 'You know if you don’t get here early, you’re standing in line for breakfast.',
     label: "Marge's Diner, Fargo",
     to: concepts.dinerFargo.path,
     tilt: 'tilt-a',
@@ -22,8 +19,8 @@ const innerMarges = [
     ),
   },
   {
-    archetype: 'The Basement Legend',
-    line: 'You know the good bars don’t need a sign, a window, or ground-floor access.',
+    archetype: 'The Regular',
+    line: 'You’ve got a favorite spot at the rail, and everybody knows it’s yours.',
     label: "Marge's Bar",
     to: concepts.bar.path,
     tilt: 'tilt-c',
@@ -47,8 +44,8 @@ const innerMarges = [
     ),
   },
   {
-    archetype: 'The Night Owl',
-    line: 'One more hand. One more round. One more hour you swore you weren’t staying for.',
+    archetype: 'The Lucky Duck',
+    line: 'You know the odds are for charity. You’re still trying to beat them.',
     label: 'Lucky Lounge',
     to: concepts.luckyLounge.path,
     tilt: 'tilt-e',
@@ -61,7 +58,7 @@ const innerMarges = [
   },
   {
     archetype: 'The Lake Person',
-    line: 'Boat’s in the water by 8am. Pancakes by 8:15. No regrets, ever.',
+    line: 'Breakfast at 8. Lake by 9.',
     label: "Marge's Diner, Ottertail",
     to: concepts.dinerOttertail.path,
     tilt: 'tilt-d',
@@ -102,39 +99,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section where-today" aria-labelledby="where-today-heading">
-        <div className="container">
-          <div className="section-head">
-            <p className="eyebrow">Primary homepage decision</p>
-            <h2 id="where-today-heading">Where Are You Today?</h2>
-          </div>
-          <div className="where-grid">
-            <Link to="/fargo" className="where-card tilt-a">
-              <img src={images.heroFargo} alt="" />
-              <div className="scrim" />
-              <div className="where-card-body">
-                <h3>Downtown Fargo</h3>
-                <p className="where-path">Breakfast &rarr; Patio &rarr; Dinner &rarr; Drinks &rarr; Lucky Lounge</p>
-                <span className="btn btn-outline on-dark btn-sm">Explore Fargo</span>
-              </div>
-            </Link>
-            <Link to="/ottertail" className="where-card tilt-d">
-              <img src={images.heroOttertail} alt="" />
-              <div className="scrim" />
-              <div className="where-card-body">
-                <h3>Ottertail</h3>
-                <p className="where-path">Breakfast &rarr; Lake &rarr; Lunch &rarr; Lake &rarr; Repeat</p>
-                <span className="btn btn-outline on-dark btn-sm">Explore Ottertail</span>
-              </div>
-            </Link>
-          </div>
-          <p className="where-note">
-            Downtown Fargo feels urban, historic, warm and energetic. Ottertail feels like Minnesota
-            lake country and vacation mode &mdash; immediately.
-          </p>
-        </div>
-      </section>
-
       <section className="section inner-marge" aria-labelledby="inner-marge-heading">
         <div className="container">
           <div className="inner-marge-head">
@@ -166,47 +130,12 @@ export default function Home() {
           <div className="section-head">
             <p className="eyebrow">The Whole Family</p>
             <h2 id="family-heading">Every Corner of the World of Marge&rsquo;s</h2>
-            <p>Each location has its own personality &mdash; while clearly belonging to the same family.</p>
+            <p>No matter what you are in the mood for, Marge has you covered.</p>
           </div>
           <div className="family-grid">
             {conceptList.map((concept) => (
               <ConceptCard concept={concept} key={concept.slug} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-tight shaker-teaser" aria-labelledby="shaker-teaser-heading">
-        <div className="container shaker-teaser-inner">
-          <div className="shaker-teaser-media">
-            <div className="polaroid shaker-photo-a tilt-e">
-              <div className="polaroid-photo">
-                <img src={shakerOfTheMonth.image} alt="" />
-              </div>
-            </div>
-            <div className="polaroid shaker-photo-b tilt-b">
-              <div className="polaroid-photo">
-                <img src={images.shakerVintageShelf} alt="" />
-              </div>
-            </div>
-            <div className="washi-tape washi-teal shaker-photo-tape" aria-hidden="true" />
-          </div>
-          <div className="shaker-teaser-copy">
-            <p className="eyebrow">Yes, really</p>
-            <h2 id="shaker-teaser-heading">Yes. Those Are All Salt &amp; Pepper Shakers.</h2>
-            <p>
-              For decades, salt &amp; pepper shakers were tiny pieces of everyday art &mdash; souvenirs, gifts,
-              decorations and wonderfully unnecessary objects people collected simply because they made
-              them smile. We happen to have a lot of them. Individually, they&rsquo;re tiny curiosities.
-              Together, they&rsquo;re pretty spectacular.
-            </p>
-            <div className="sticky-note tilt-c shaker-quote">
-              <p>&ldquo;{rooster.margeCommentary}&rdquo; &mdash; Marge, on the {rooster.name}</p>
-            </div>
-            <div className="shaker-teaser-actions">
-              <Link to="/the-shakers" className="btn-stamp">Take a<br />Look</Link>
-              <Link to="/the-shakers/museum" className="btn-ticket">Show Me a Random Shaker</Link>
-            </div>
           </div>
         </div>
       </section>

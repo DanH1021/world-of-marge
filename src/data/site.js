@@ -66,7 +66,7 @@ export const concepts = {
     name: 'Lucky Lounge',
     place: 'Inside Marge’s Supper Club',
     path: '/fargo/supper-club/lucky-lounge',
-    tag: 'Inside Marge’s Supper Club',
+    tag: 'E-Tabs + Blackjack (Coming Soon)',
     heroImage: images.loungeCards,
     address: 'Roberts Alley, Downtown Fargo',
     hours: 'Later — hours vary',

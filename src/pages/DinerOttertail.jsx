@@ -37,6 +37,9 @@ export default function DinerOttertail() {
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <span className="btn btn-primary" style={{ opacity: 0.6, cursor: 'default' }}>Order Online — Coming Soon</span>
               <Link to="/photos/diner-ottertail" className="btn btn-outline">Take a Look Around</Link>
+              <a href="/menus/diner-ottertail-menu.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                View the Menu (PDF)
+              </a>
             </div>
           </div>
 

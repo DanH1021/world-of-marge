@@ -51,6 +51,9 @@ export default function DinerFargo() {
                 Order Online
               </a>
               <a href="#menu" className="btn btn-outline">See What&rsquo;s for Breakfast</a>
+              <a href="/menus/diner-fargo-menu.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                View the Menu (PDF)
+              </a>
             </div>
           </div>
 

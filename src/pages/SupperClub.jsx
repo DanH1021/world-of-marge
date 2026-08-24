@@ -37,6 +37,10 @@ export default function SupperClub() {
               Marge&rsquo;s Supper Club takes inspiration from the great Midwestern supper club while
               giving the experience our own personality.
             </p>
+            <p>
+              Keep an eye out for the wall of vintage salt &amp; pepper shakers by the bar &mdash; yes,
+              they&rsquo;re real, and yes, <Link to="/the-shakers">there&rsquo;s a lot more where that came from</Link>.
+            </p>
             <div className="badge-row">
               <span className="badge">Dinner</span>
               <span className="badge">Cocktails</span>
