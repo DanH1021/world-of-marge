@@ -38,9 +38,9 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="footer-closing">{CLOSING_LINE}</p>
           <div className="footer-legal">
-            <a href="#">Careers</a>
-            <a href="#">Privacy</a>
-            <a href="#">Accessibility</a>
+            <Link to="/careers">Careers</Link>
+            <Link to="/privacy">Privacy</Link>
+            <Link to="/accessibility">Accessibility</Link>
             <span>&copy; {new Date().getFullYear()} World of Marge&rsquo;s</span>
           </div>
         </div>
