@@ -79,7 +79,7 @@ export default function Home() {
           <div className="index-card home-hero-card tilt-a">
             <p className="eyebrow">Welcome to the</p>
             <h1 id="home-hero-heading">
-              World of <img src="/brand/marges-signature.png" alt="Marge's" className="hero-signature" />
+              World of <img src="/brand/marges-signature-rust.png" alt="Marge's" className="hero-signature" />
             </h1>
             <p className="home-hero-line hand-line">Breakfast. Dinner. Drinks. Downtown. Lake days. Late nights.</p>
             <p className="home-hero-intro">
