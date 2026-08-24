@@ -93,7 +93,7 @@ export default function Home() {
             <div className="washi-tape washi-mustard home-hero-tape" aria-hidden="true" />
             <div className="polaroid tilt-c">
               <div className="polaroid-photo">
-                <img src={images.heroWorld} alt="" />
+                <img src={images.homeOurLittleWorld} alt="" />
               </div>
               <p className="polaroid-caption">our little world</p>
             </div>

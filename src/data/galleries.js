@@ -16,7 +16,7 @@ export const galleries = {
     concept: concepts.bar,
     photos: [
       { src: images.barHero, caption: 'The neon out front.' },
-      { src: images.barCardsCocktail, caption: 'Cards and a drink at the rail.' },
+      { src: images.barNeon, caption: 'Cheers under the neon sign.' },
       { src: images.barWineNeon, caption: 'A glass of red under the sign.' },
       { src: images.barPoutine, caption: 'Something to share.' },
       { src: images.barCrowd, caption: 'Regulars, most nights.' },
@@ -25,11 +25,11 @@ export const galleries = {
   'supper-club': {
     concept: concepts.supperClub,
     photos: [
-      { src: images.supperDinnerTable, caption: 'Table set for dinner.' },
+      { src: images.supperDinnerTable, caption: 'A quiet table, low light.' },
       { src: images.supperSteak, caption: 'A classic supper club plate.' },
       { src: images.supperDuck, caption: 'Tonight’s duck entree.' },
-      { src: images.supperCocktail, caption: 'A drink before dinner.' },
-      { src: images.supperWinePour, caption: 'Another round.' },
+      { src: images.supperCocktail, caption: "Card games and cocktails, a Marge's tradition." },
+      { src: images.supperWinePour, caption: 'Loaded sweet potato skins.' },
     ],
   },
   'diner-ottertail': {
@@ -37,8 +37,6 @@ export const galleries = {
     photos: [
       { src: images.dinerHashbrownsCrochet, caption: 'Breakfast, lake-cabin style.' },
       { src: images.dinerMenuReading, caption: 'The menu, no particular hurry.' },
-      { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
-      { src: images.dinerSweetPotato, caption: 'Loaded sweet potato skins.' },
       { src: images.dinerSalad, caption: 'Something lighter, lakeside.' },
     ],
   },

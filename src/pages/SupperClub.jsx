@@ -81,8 +81,8 @@ export default function SupperClub() {
           <div className="photo-strip photo-strip-4">
             <img src={images.supperSteak} alt="Plated dinner entree at Marge's Supper Club" className="tall" />
             <img src={images.supperDuck} alt="Duck entree at Marge's Supper Club" />
-            <img src={images.supperCocktail} alt="Cocktail at Marge's Supper Club" />
-            <img src={images.supperWinePour} alt="Pouring wine at Marge's Supper Club" />
+            <img src={images.supperCocktail} alt="Card games and cocktails, a Marge's tradition" />
+            <img src={images.supperWinePour} alt="Loaded sweet potato skins at Marge's Supper Club" />
           </div>
         </div>
       </section>

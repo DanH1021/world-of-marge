@@ -57,10 +57,8 @@ export default function Bar() {
 
       <section className="section-tight bar-section photo-strip-section">
         <div className="container">
-          <div className="photo-strip photo-strip-4">
-            <img src={images.barCardsCocktail} alt="Cocktails and a deck of cards at Marge's Bar" className="tall" />
-            <img src={images.dinerWindowDecal} alt="Marge's window signage in Downtown Fargo" />
-            <img src={images.barWineNeon} alt="Wine at the bar under the Marge's Bar neon sign" />
+          <div className="photo-strip photo-strip-2">
+            <img src={images.barWineNeon} alt="Wine at the bar under the Marge's Bar neon sign" className="tall" />
             <img src={images.barPoutine} alt="An appetizer at Marge's Bar" />
           </div>
         </div>

@@ -77,7 +77,7 @@ export default function DinerFargo() {
             <img src={images.dinerPancakes} alt="Stack of pancakes with syrup at Marge's Diner" className="tall" />
             <img src={images.dinerFrenchToast} alt="French toast and a Bloody Mary at Marge's Diner" />
             <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" />
-            <img src={images.dinerLoungeInterior} alt="Cozy seating area inside Marge's Diner" />
+            <img src={images.dinerWindowDecal} alt="Marge's Diner window signage on Broadway" />
           </div>
         </div>
       </section>

@@ -12,14 +12,15 @@ export const images = {
   heroWorld: u('photo-1414235077428-338989a2e8c0', 2000), // diner counter/interior warm light
   heroFargo: u('photo-1449824913935-59a10b8d2000', 2000), // downtown city street warm evening
   heroOttertail: u('photo-1500375592092-40eb2168fd21', 2000), // lake dock sunrise
+  homeOurLittleWorld: '/photos/real/lucky-lounge-cards-cocktails.jpg', // real photography — warm game-night/family gathering shot for the "our little world" polaroid
 
   // ---- Diner (Fargo) ----
   dinerPancakes: '/photos/real/diner-pancakes.jpg', // real photography
   dinerFrenchToast: '/photos/real/diner-french-toast.jpg', // real photography
   dinerMenuReading: '/photos/real/diner-menu-reading.jpg', // real photography
-  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography
+  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography — confirmed Fargo (same window signage visible as dinerWindowDecal), not used on Ottertail page
   dinerBarCheers: '/photos/real/bar-cheers-christmas.jpg', // real photography (Dan-specified placement)
-  dinerWindowDecal: '/photos/real/diner-window-decal.jpg', // real photography
+  dinerWindowDecal: '/photos/real/diner-window-decal.jpg', // real photography — "Best Salad Bar on Broadway" signage, Fargo location only
   dinerCounter: u('photo-1554118811-1e0d58224f24'),
   dinerCoffee: u('photo-1495474472287-4d71bcdd2085'),
   dinerBooth: u('photo-1466978913421-dad2ebd01d17'),
@@ -27,7 +28,7 @@ export const images = {
 
   // ---- Bar ----
   barHero: '/photos/real/bar-hero-neon-phone.jpg', // real photography
-  barCardsCocktail: '/photos/real/bar-cards-cocktail.jpg', // real photography
+  barCardsCocktail: '/photos/real/bar-cards-cocktail.jpg', // real photography — retired for now (holiday/Christmas décor visible, not evergreen); not currently placed on any page, confirm with Dan before reusing
   barWineNeon: '/photos/real/bar-wine-neon.jpg', // real photography
   barPoutine: '/photos/real/bar-poutine-fries.jpg', // real photography
   barNeon: '/photos/real/bar-neon-cheers.jpg', // real photography
@@ -36,12 +37,12 @@ export const images = {
   barCrowd: u('photo-1543007630-9710e4a00a20'),
 
   // ---- Supper Club ----
-  supperDinnerTable: u('photo-1414235077428-338989a2e8c0'),
+  supperDinnerTable: '/brand/supper-club-ambiance.svg', // generic low-light ambiance, no food shown
   supperSteak: '/photos/real/supper-club-steak-shakers.jpg', // real photography
   supperDuck: '/photos/real/supper-club-duck-shakers.jpg', // real photography
-  supperCocktail: u('photo-1470337458703-46ad1756a187'),
+  supperCocktail: '/photos/real/lucky-lounge-cards-cocktails.jpg', // real photography — same file as homeOurLittleWorld
   supperInterior: u('photo-1414235077428-338989a2e8c0'),
-  supperWinePour: u('photo-1510812431401-41d2bd2722f3'),
+  supperWinePour: '/photos/real/diner-sweet-potato-skins.jpg', // real photography (moved from Ottertail)
 
   // ---- Lucky Lounge (photos pending — coming soon) ----
   loungePattern: '/brand/lucky-lounge-pattern.svg', // decorative placeholder, not a photo

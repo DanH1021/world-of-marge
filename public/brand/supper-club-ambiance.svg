@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000" viewBox="0 0 2000 1000">
+  <defs>
+    <radialGradient id="glow1" cx="30%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#3a2a1c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1a1210" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="72%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#4a3320" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#1a1210" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#100b09"/>
+      <stop offset="100%" stop-color="#241a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="1000" fill="url(#base)"/>
+  <rect width="2000" height="1000" fill="url(#glow1)"/>
+  <rect width="2000" height="1000" fill="url(#glow2)"/>
+  <!-- soft candle glow points -->
+  <circle cx="600" cy="560" r="10" fill="#e8b45a" opacity="0.5"/>
+  <circle cx="600" cy="560" r="60" fill="#e8b45a" opacity="0.12"/>
+  <circle cx="1420" cy="400" r="8" fill="#e8b45a" opacity="0.45"/>
+  <circle cx="1420" cy="400" r="55" fill="#e8b45a" opacity="0.1"/>
+</svg>

@@ -26,10 +26,6 @@ export default function LuckyLounge() {
           <div className="prose lucky-prose">
             <p>Hidden inside Marge&rsquo;s Supper Club is the Lucky Lounge.</p>
             <p>Gaming. Drinks. A slightly more mischievous side of Marge&rsquo;s.</p>
-            <p>
-              The main Marge&rsquo;s identity stays recognizable here &mdash; just filtered through
-              stained-glass light and a deck of playing cards.
-            </p>
             <div className="badge-row">
               <span className="badge badge-dark">Gaming</span>
               <span className="badge badge-dark">Cocktails</span>
@@ -37,7 +33,6 @@ export default function LuckyLounge() {
             </div>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <Link to="/fargo/supper-club" className="btn btn-outline on-dark">Back to the Supper Club</Link>
-              <Link to="/photos/lucky-lounge" className="btn btn-primary">Take a Look Around</Link>
             </div>
           </div>
 
