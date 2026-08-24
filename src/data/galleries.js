@@ -9,7 +9,7 @@ export const galleries = {
       { src: images.dinerFrenchToast, caption: 'French toast and a Bloody Mary.' },
       { src: images.dinerMenuReading, caption: 'The soup & salad bar, Monday–Friday.' },
       { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
-      { src: images.dinerCounter, caption: 'Counter seating, mornings.' },
+      { src: images.dinerHashbrownsSpread, caption: 'A full spread on a Saturday morning.' },
     ],
   },
   bar: {
@@ -39,7 +39,6 @@ export const galleries = {
       { src: images.dinerHashbrownsCrochet, caption: 'Breakfast, lake-cabin style.' },
       { src: images.dinerMenuReading, caption: 'The menu, no particular hurry.' },
       { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
-      { src: images.dinerSweetPotato, caption: 'Loaded sweet potato skins.' },
       { src: images.dinerSalad, caption: 'Something lighter, lakeside.' },
     ],
   },

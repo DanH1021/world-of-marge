@@ -52,9 +52,9 @@ export const images = {
   loungeStainedGlass: u('photo-1545239351-1141bd82e8a6'),
 
   // ---- Ottertail / lake ----
-  dinerSweetPotato: '/photos/real/diner-sweet-potato-skins.jpg', // real photography
+  dinerSweetPotato: '/photos/real/diner-sweet-potato-skins.jpg', // real photography — Supper Club appetizer only, not used on either Diner page
   dinerHashbrownsCrochet: '/photos/real/diner-hashbrowns-crochet.jpg', // real photography
-  dinerHashbrownsSpread: '/photos/real/diner-hashbrowns-spread.jpg', // real photography
+  dinerHashbrownsSpread: '/photos/real/diner-hashbrowns-spread.jpg', // real photography — orange-table Fargo color scheme, used on the Diner Fargo page
   dinerSalad: '/photos/real/diner-salad.jpg', // real photography
   lakeDock: u('photo-1500375592092-40eb2168fd21'),
   lakeBreakfast: u('photo-1533089860892-a7c6f0a88666'),
