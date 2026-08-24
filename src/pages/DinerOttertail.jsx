@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
+import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
+import { concepts } from '../data/site';
 import './Diner.css';
 
 export default function DinerOttertail() {
@@ -10,7 +12,7 @@ export default function DinerOttertail() {
         eyebrow="Marge's Diner — Ottertail, Minnesota"
         title="Marge's at the Lake"
         subtitle="Coffee tastes better when you don't have anywhere to be."
-        image={images.lakeBreakfast}
+        image={concepts.dinerOttertail.heroImage}
       />
 
       <div className="diner-logo-wrap">
@@ -49,7 +51,7 @@ export default function DinerOttertail() {
               <div className="info-row"><dt>Address</dt><dd>Ottertail, MN</dd></div>
               <div className="info-row"><dt>Hours</dt><dd>Breakfast &amp; lunch daily<br />Seasonal hours</dd></div>
               <div className="info-row"><dt>Vibe</dt><dd>Lake-day atmosphere</dd></div>
-              <div className="info-row"><dt>Follow</dt><dd>Instagram &middot; Facebook</dd></div>
+              <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.dinerOttertail.social} /></dd></div>
             </dl>
             <Link to="/ottertail" className="btn btn-outline">More of the Ottertail Experience</Link>
           </aside>
@@ -58,10 +60,11 @@ export default function DinerOttertail() {
 
       <section className="section-tight photo-strip-section">
         <div className="container">
-          <div className="photo-strip">
-            <img src={images.lakeDock} alt="Lake dock near Marge's Diner in Ottertail" className="tall" />
-            <img src={images.lakeBoat} alt="Boat on the lake near Ottertail, Minnesota" />
-            <img src={images.lakeBreakfast} alt="Breakfast plate with a lake view in Ottertail" />
+          <div className="photo-strip photo-strip-4">
+            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" className="tall" />
+            <img src={images.dinerLoungeInterior} alt="Cozy seating area inside Marge's Diner" />
+            <img src={images.dinerSweetPotato} alt="Loaded sweet potato skins at Marge's Diner" />
+            <img src={images.dinerSalad} alt="Fresh salad at Marge's Diner" />
           </div>
         </div>
       </section>

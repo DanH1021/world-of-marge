@@ -10,7 +10,7 @@ export default function LuckyLounge() {
         eyebrow="Inside Marge's Supper Club"
         title="Feeling Lucky?"
         subtitle="A little darker. A little moodier. And probably a little later."
-        image={images.loungeNeonDark}
+        image={images.loungePattern}
       />
 
       <div className="lucky-logo-wrap">
@@ -65,11 +65,7 @@ export default function LuckyLounge() {
 
       <section className="section-tight">
         <div className="container">
-          <div className="photo-strip">
-            <img src={images.loungeCards} alt="Playing cards on a table in the Lucky Lounge" className="tall" />
-            <img src={images.loungeStainedGlass} alt="Stained glass detail inside the Lucky Lounge" />
-            <img src={images.loungeDice} alt="Dice and gaming details in the Lucky Lounge" />
-          </div>
+          <p className="eyebrow" style={{ textAlign: 'center' }}>Photos coming soon</p>
         </div>
       </section>
     </div>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
+import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
 import './Diner.css';
@@ -63,7 +64,7 @@ export default function DinerFargo() {
               <div className="info-row"><dt>Address</dt><dd>220 N Broadway Dr<br />Fargo, ND</dd></div>
               <div className="info-row"><dt>Hours</dt><dd>7 days a week<br />8am – 2pm</dd></div>
               <div className="info-row"><dt>Phone</dt><dd>(701) 555-0139</dd></div>
-              <div className="info-row"><dt>Follow</dt><dd>Instagram &middot; Facebook</dd></div>
+              <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.dinerFargo.social} /></dd></div>
             </dl>
             <Link to="/photos/diner-fargo" className="btn btn-outline">Take a Look Around</Link>
           </aside>
@@ -72,10 +73,11 @@ export default function DinerFargo() {
 
       <section id="menu" className="section-tight photo-strip-section">
         <div className="container">
-          <div className="photo-strip">
+          <div className="photo-strip photo-strip-4">
             <img src={images.dinerPancakes} alt="Stack of pancakes with syrup at Marge's Diner" className="tall" />
-            <img src={images.dinerSaladBar} alt="Hashbrowns, soup, and salad at Marge's Diner" />
-            <img src={images.dinerShakerShelf} alt="Collection of vintage salt and pepper shakers on a shelf" />
+            <img src={images.dinerFrenchToast} alt="French toast and a Bloody Mary at Marge's Diner" />
+            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" />
+            <img src={images.dinerLoungeInterior} alt="Cozy seating area inside Marge's Diner" />
           </div>
         </div>
       </section>

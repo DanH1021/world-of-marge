@@ -1,7 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
+import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
+import { concepts } from '../data/site';
 import './SupperClub.css';
 
 // Lazy-loaded so the Firebase SDK (used only by the live menu) doesn't get
@@ -37,10 +39,6 @@ export default function SupperClub() {
               Marge&rsquo;s Supper Club takes inspiration from the great Midwestern supper club while
               giving the experience our own personality.
             </p>
-            <p>
-              Keep an eye out for the wall of vintage salt &amp; pepper shakers by the bar &mdash; yes,
-              they&rsquo;re real, and yes, <Link to="/the-shakers">there&rsquo;s a lot more where that came from</Link>.
-            </p>
             <div className="badge-row">
               <span className="badge">Dinner</span>
               <span className="badge">Cocktails</span>
@@ -58,7 +56,7 @@ export default function SupperClub() {
               <div className="info-row"><dt>Address</dt><dd>Roberts Alley<br />Downtown Fargo</dd></div>
               <div className="info-row"><dt>Hours</dt><dd>Dinner nightly<br />Hours vary</dd></div>
               <div className="info-row"><dt>Reservations</dt><dd>Recommended</dd></div>
-              <div className="info-row"><dt>Follow</dt><dd>Instagram &middot; Facebook</dd></div>
+              <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.supperClub.social} /></dd></div>
             </dl>
             <a href="#reserve" className="btn btn-primary">Save Us a Seat</a>
           </aside>
@@ -80,17 +78,18 @@ export default function SupperClub() {
 
       <section className="section-tight photo-strip-section">
         <div className="container">
-          <div className="photo-strip">
+          <div className="photo-strip photo-strip-4">
             <img src={images.supperSteak} alt="Plated dinner entree at Marge's Supper Club" className="tall" />
+            <img src={images.supperDuck} alt="Duck entree at Marge's Supper Club" />
             <img src={images.supperCocktail} alt="Cocktail at Marge's Supper Club" />
-            <img src={images.supperCandlelight} alt="Candlelit dining room at Marge's Supper Club" />
+            <img src={images.supperWinePour} alt="Pouring wine at Marge's Supper Club" />
           </div>
         </div>
       </section>
 
       <section className="section lucky-entrance">
         <div className="container lucky-entrance-inner">
-          <img src={images.loungeCards} alt="" className="lucky-entrance-img" />
+          <img src={images.loungePattern} alt="" className="lucky-entrance-img" />
           <div>
             <p className="eyebrow on-dark">Feeling lucky?</p>
             <h2>Hidden Inside the Supper Club: The Lucky Lounge</h2>

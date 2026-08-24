@@ -14,7 +14,6 @@ export const nav = [
     ],
   },
   { label: "The Marge's Story", to: '/the-marges-story' },
-  { label: 'The Shakers', to: '/the-shakers' },
   { label: 'Photos', to: '/photos' },
   { label: 'Find Your Marge’s', to: '/find-your-marges' },
 ];
@@ -33,6 +32,7 @@ export const concepts = {
     personality:
       'Comfortable neighborhood diner. Breakfast and lunch. Downtown Fargo. Lots of personality without trying too hard.',
     color: 'rust',
+    social: { instagram: 'marges_diner', facebook: 'marges_diner' },
   },
   bar: {
     slug: 'bar',
@@ -41,11 +41,12 @@ export const concepts = {
     place: 'Downtown Fargo',
     path: '/fargo/bar',
     tag: 'Drinks + Patio',
-    heroImage: images.barBasement,
+    heroImage: images.barHero,
     address: 'Roberts Alley, Downtown Fargo',
-    hours: 'Evenings — hours vary',
+    hours: 'Tue–Sat, 6pm–2am',
     personality: 'Intimate, casual neighborhood-bar personality. The original small basement bar where Marge’s began.',
     color: 'forest',
+    social: { instagram: 'margesbarfargo', facebookUrl: 'https://www.facebook.com/profile.php?id=100063509833472' },
   },
   supperClub: {
     slug: 'supper-club',
@@ -59,6 +60,7 @@ export const concepts = {
     hours: 'Dinner nightly — hours vary',
     personality: 'Classic Midwestern supper club inspiration. Nostalgic but not themed or kitschy. Warm, experiential dining.',
     color: 'forest',
+    social: { instagram: null, facebook: 'margessupperclub' },
   },
   luckyLounge: {
     slug: 'lucky-lounge',
@@ -67,7 +69,7 @@ export const concepts = {
     place: 'Inside Marge’s Supper Club',
     path: '/fargo/supper-club/lucky-lounge',
     tag: 'E-Tabs + Blackjack (Coming Soon)',
-    heroImage: images.loungeCards,
+    heroImage: images.loungePattern,
     address: 'Roberts Alley, Downtown Fargo',
     hours: 'Later — hours vary',
     personality: 'Visually darker and moodier than the main Supper Club. Playing-card and stained-glass visual elements.',
@@ -80,11 +82,12 @@ export const concepts = {
     place: 'Ottertail, Minnesota',
     path: '/ottertail/diner',
     tag: 'Breakfast + Lunch + Lake Days',
-    heroImage: images.lakeBreakfast,
+    heroImage: images.dinerHashbrownsCrochet,
     address: 'Ottertail, MN',
     hours: 'Breakfast & lunch daily — hours vary by season',
     personality: 'Same Marge’s DNA as Fargo. Stronger Minnesota lake-country personality. Vacation / cabin / summer / lake-day atmosphere.',
     color: 'gold',
+    social: { instagram: null, facebook: 'ottertailmarge' },
   },
 };
 
@@ -110,7 +113,6 @@ export const footerColumns = [
     title: 'Explore',
     links: [
       { label: "The Marge's Story", to: '/the-marges-story' },
-      { label: 'The Shakers', to: '/the-shakers' },
       { label: 'Photos', to: '/photos' },
       { label: "Find Your Marge's", to: '/find-your-marges' },
     ],
