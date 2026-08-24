@@ -16,7 +16,6 @@ export const nav = [
   { label: "The Marge's Story", to: '/the-marges-story' },
   { label: 'Photos', to: '/photos' },
   { label: 'Find Your Marge’s', to: '/find-your-marges' },
-  { label: 'Reservations', to: '/reservations' },
 ];
 
 export const concepts = {
