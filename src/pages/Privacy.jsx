@@ -104,7 +104,7 @@ export default function Privacy() {
           <h2>Contact Us</h2>
           <p>
             Questions about this policy or your information? Reach us at{' '}
-            <a href="mailto:hello@worldofmarge.com">hello@worldofmarge.com</a>.
+            <a href="mailto:damien@worldofmarge.com">damien@worldofmarge.com</a>.
           </p>
         </div>
       </section>

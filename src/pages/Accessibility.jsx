@@ -46,7 +46,7 @@ export default function Accessibility() {
           <h2>Feedback</h2>
           <p>
             If you experience any difficulty accessing any part of this website, please contact us at{' '}
-            <a href="mailto:hello@worldofmarge.com">hello@worldofmarge.com</a>. Please let us know what
+            <a href="mailto:damien@worldofmarge.com">damien@worldofmarge.com</a>. Please let us know what
             page you were on and what happened — it helps us track down and fix the issue faster.
           </p>
         </div>

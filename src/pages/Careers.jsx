@@ -53,7 +53,7 @@ export default function Careers() {
           <h2>How to Apply</h2>
           <p>
             Send your resume — and which location and role you&rsquo;re interested in — to{' '}
-            <a href="mailto:careers@worldofmarge.com">careers@worldofmarge.com</a>. We read every
+            <a href="mailto:damien@worldofmarge.com">damien@worldofmarge.com</a>. We read every
             application and will get back to you if it looks like a good fit.
           </p>
         </div>
