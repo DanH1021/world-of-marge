@@ -60,9 +60,8 @@ export default function DinerOttertail() {
 
       <section className="section-tight photo-strip-section">
         <div className="container">
-          <div className="photo-strip photo-strip-4">
-            <img src={images.dinerHashbrownsCrochet} alt="Breakfast at Marge's Diner, lake-cabin style" className="tall" />
-            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" />
+          <div className="photo-strip">
+            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" className="tall" />
             <img src={images.dinerLoungeInterior} alt="Cozy seating area inside Marge's Diner" />
             <img src={images.dinerSalad} alt="Fresh salad at Marge's Diner" />
           </div>
