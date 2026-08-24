@@ -16,9 +16,10 @@ export const galleries = {
     concept: concepts.bar,
     photos: [
       { src: images.barHero, caption: 'The neon out front.' },
+      { src: images.dinerBarCheers, caption: 'Cheers at the bar.' },
       { src: images.barNeon, caption: 'Cheers under the neon sign.' },
       { src: images.barWineNeon, caption: 'A glass of red under the sign.' },
-      { src: images.barCrowd, caption: 'Regulars, most nights.' },
+      { src: images.barCardsCocktail, caption: 'Cards and a drink at the rail.' },
     ],
   },
   'supper-club': {
@@ -37,6 +38,8 @@ export const galleries = {
     photos: [
       { src: images.dinerHashbrownsCrochet, caption: 'Breakfast, lake-cabin style.' },
       { src: images.dinerMenuReading, caption: 'The menu, no particular hurry.' },
+      { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
+      { src: images.dinerSweetPotato, caption: 'Loaded sweet potato skins.' },
       { src: images.dinerSalad, caption: 'Something lighter, lakeside.' },
     ],
   },

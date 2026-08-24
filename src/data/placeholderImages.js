@@ -18,8 +18,8 @@ export const images = {
   dinerPancakes: '/photos/real/diner-pancakes.jpg', // real photography
   dinerFrenchToast: '/photos/real/diner-french-toast.jpg', // real photography
   dinerMenuReading: '/photos/real/diner-menu-reading.jpg', // real photography
-  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography — confirmed Fargo (same window signage visible as dinerWindowDecal), not used on Ottertail page
-  dinerBarCheers: '/photos/real/bar-cheers-christmas.jpg', // real photography (Dan-specified placement)
+  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography — used on both Diner Fargo and Diner Ottertail pages (Dan confirmed the shared decor/photos across both locations is intentional)
+  dinerBarCheers: '/photos/real/bar-cheers-christmas.jpg', // real photography — group cheers at the bar counter; used on the Bar page
   dinerWindowDecal: '/photos/real/diner-window-decal.jpg', // real photography — "Best Salad Bar on Broadway" signage, Fargo location only
   dinerCounter: u('photo-1554118811-1e0d58224f24'),
   dinerCoffee: u('photo-1495474472287-4d71bcdd2085'),
@@ -28,7 +28,7 @@ export const images = {
 
   // ---- Bar ----
   barHero: '/photos/real/bar-hero-neon-phone.jpg', // real photography
-  barCardsCocktail: '/photos/real/bar-cards-cocktail.jpg', // real photography — retired for now (holiday/Christmas décor visible, not evergreen); not currently placed on any page, confirm with Dan before reusing
+  barCardsCocktail: '/photos/real/bar-cards-cocktail.jpg', // real photography — cribbage/cocktail shot, same holiday décor as dinerBarCheers; used on the Bar page
   barWineNeon: '/photos/real/bar-wine-neon.jpg', // real photography
   barPoutine: '/photos/real/bar-poutine-fries.jpg', // real photography — same lamp/brick/shaker-shelf backdrop as the Supper Club shots, so it's used on the Supper Club page, not Bar
   barNeon: '/photos/real/bar-neon-cheers.jpg', // real photography
