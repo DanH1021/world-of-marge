@@ -59,7 +59,7 @@ export default function Bar() {
         <div className="container">
           <div className="photo-strip photo-strip-2">
             <img src={images.barWineNeon} alt="Wine at the bar under the Marge's Bar neon sign" className="tall" />
-            <img src={images.barPoutine} alt="An appetizer at Marge's Bar" />
+            <img src={images.barNeon} alt="Cheers under the Marge's Bar neon sign" />
           </div>
         </div>
       </section>

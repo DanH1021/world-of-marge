@@ -30,7 +30,7 @@ export const images = {
   barHero: '/photos/real/bar-hero-neon-phone.jpg', // real photography
   barCardsCocktail: '/photos/real/bar-cards-cocktail.jpg', // real photography — retired for now (holiday/Christmas décor visible, not evergreen); not currently placed on any page, confirm with Dan before reusing
   barWineNeon: '/photos/real/bar-wine-neon.jpg', // real photography
-  barPoutine: '/photos/real/bar-poutine-fries.jpg', // real photography
+  barPoutine: '/photos/real/bar-poutine-fries.jpg', // real photography — same lamp/brick/shaker-shelf backdrop as the Supper Club shots, so it's used on the Supper Club page, not Bar
   barNeon: '/photos/real/bar-neon-cheers.jpg', // real photography
   barBasement: u('photo-1514362545857-3bc16c4c7d1b'),
   barPatio: u('photo-1521017432531-fbd92d768814'),
