@@ -5,10 +5,11 @@ export const galleries = {
   'diner-fargo': {
     concept: concepts.dinerFargo,
     photos: [
-      { src: images.dinerPancakes, caption: 'Buttermilk pancakes, a breakfast staple.' },
-      { src: images.dinerFrenchToast, caption: 'French toast and a Bloody Mary.' },
       { src: images.dinerMenuReading, caption: 'The soup & salad bar, Monday–Friday.' },
-      { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
+      { src: images.dinerHashbrownsSpread, caption: 'A full spread on a Saturday morning.' },
+      { src: images.dinerHashbrownsCrochet, caption: 'Breakfast under a cozy crocheted blanket.' },
+      { src: images.dinerWindowDecal, caption: 'Best salad bar on Broadway.' },
+      { src: images.dinerLoungeInterior, caption: 'Hanging plants fill the front window.' },
     ],
   },
   bar: {
@@ -35,11 +36,10 @@ export const galleries = {
   'diner-ottertail': {
     concept: concepts.dinerOttertail,
     photos: [
-      { src: images.dinerHashbrownsCrochet, caption: 'Breakfast, lake-cabin style.' },
       { src: images.dinerMenuReading, caption: 'The menu, no particular hurry.' },
-      { src: images.dinerLoungeInterior, caption: 'A corner of the dining room.' },
       { src: images.dinerHashbrownsSpread, caption: 'A full spread on a Saturday morning.' },
-      { src: images.dinerSalad, caption: 'Something lighter, lakeside.' },
+      { src: images.dinerHashbrownsCrochet, caption: 'Breakfast, lake-cabin style.' },
+      { src: images.dinerPancakes, caption: 'Buttermilk pancakes, a breakfast staple.' },
     ],
   },
 };

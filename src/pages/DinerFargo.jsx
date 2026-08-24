@@ -73,11 +73,12 @@ export default function DinerFargo() {
 
       <section id="menu" className="section-tight photo-strip-section">
         <div className="container">
-          <div className="photo-strip photo-strip-4">
-            <img src={images.dinerPancakes} alt="Stack of pancakes with syrup at Marge's Diner" className="tall" />
-            <img src={images.dinerFrenchToast} alt="French toast and a Bloody Mary at Marge's Diner" />
-            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" />
+          <div className="photo-strip">
+            <img src={images.dinerMenuReading} alt="Reading the menu at Marge's Diner" className="tall" />
+            <img src={images.dinerHashbrownsSpread} alt="Breakfast spread at Marge's Diner" />
+            <img src={images.dinerHashbrownsCrochet} alt="Breakfast on a crocheted blanket at Marge's Diner" />
             <img src={images.dinerWindowDecal} alt="Marge's Diner window signage on Broadway" />
+            <img src={images.dinerLoungeInterior} alt="Plant-filled front window at Marge's Diner" />
           </div>
         </div>
       </section>

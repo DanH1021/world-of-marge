@@ -15,10 +15,10 @@ export const images = {
   homeOurLittleWorld: '/photos/real/lucky-lounge-cards-cocktails.jpg', // real photography — warm game-night/family gathering shot for the "our little world" polaroid
 
   // ---- Diner (Fargo) ----
-  dinerPancakes: '/photos/real/diner-pancakes.jpg', // real photography
-  dinerFrenchToast: '/photos/real/diner-french-toast.jpg', // real photography
-  dinerMenuReading: '/photos/real/diner-menu-reading.jpg', // real photography
-  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography — used on both Diner Fargo and Diner Ottertail pages (Dan confirmed the shared decor/photos across both locations is intentional)
+  dinerPancakes: '/photos/real/diner-pancakes.jpg', // real photography — Diner Fargo hero image, also used in the Diner Ottertail photo strip
+  dinerFrenchToast: '/photos/real/diner-french-toast.jpg', // real photography — currently unused on any page
+  dinerMenuReading: '/photos/real/diner-menu-reading.jpg', // real photography — used on both Diner Fargo and Diner Ottertail pages
+  dinerLoungeInterior: '/photos/real/diner-lounge-interior.jpg', // real photography — the plant-filled front window/entry area (shot from inside looking out at the window decal); Diner Fargo page only
   dinerBarCheers: '/photos/real/bar-cheers-christmas.jpg', // real photography — group cheers at the bar counter; used on the Bar page
   dinerWindowDecal: '/photos/real/diner-window-decal.jpg', // real photography — "Best Salad Bar on Broadway" signage, Fargo location only
   dinerCounter: u('photo-1554118811-1e0d58224f24'),
@@ -53,9 +53,9 @@ export const images = {
 
   // ---- Ottertail / lake ----
   dinerSweetPotato: '/photos/real/diner-sweet-potato-skins.jpg', // real photography — Supper Club appetizer only, not used on either Diner page
-  dinerHashbrownsCrochet: '/photos/real/diner-hashbrowns-crochet.jpg', // real photography
-  dinerHashbrownsSpread: '/photos/real/diner-hashbrowns-spread.jpg', // real photography — used on the Diner Ottertail page (Dan confirmed this is "photo 10")
-  dinerSalad: '/photos/real/diner-salad.jpg', // real photography
+  dinerHashbrownsCrochet: '/photos/real/diner-hashbrowns-crochet.jpg', // real photography — Diner Ottertail hero image, also used on both Diner Fargo and Diner Ottertail photo strips
+  dinerHashbrownsSpread: '/photos/real/diner-hashbrowns-spread.jpg', // real photography — used on both Diner Fargo and Diner Ottertail pages
+  dinerSalad: '/photos/real/diner-salad.jpg', // real photography — currently unused on any page
   lakeDock: u('photo-1500375592092-40eb2168fd21'),
   lakeBreakfast: u('photo-1533089860892-a7c6f0a88666'),
   lakeBoat: u('photo-1502920917128-1aa500764cbd'),
