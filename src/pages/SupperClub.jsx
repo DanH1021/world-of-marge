@@ -45,7 +45,7 @@ export default function SupperClub() {
               <span className="badge">Private Dining</span>
             </div>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-              <a href="#reserve" className="btn btn-primary">Save Us a Seat</a>
+              <Link to="/reservations" className="btn btn-primary">Save Us a Seat</Link>
               <a href="#menu" className="btn btn-outline">See What&rsquo;s for Dinner</a>
             </div>
           </div>
@@ -55,10 +55,10 @@ export default function SupperClub() {
             <dl>
               <div className="info-row"><dt>Address</dt><dd>Roberts Alley<br />Downtown Fargo</dd></div>
               <div className="info-row"><dt>Hours</dt><dd>Dinner nightly<br />Hours vary</dd></div>
-              <div className="info-row"><dt>Reservations</dt><dd>Recommended</dd></div>
+              <div className="info-row"><dt>Reservations</dt><dd>Thu–Sat, online</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.supperClub.social} /></dd></div>
             </dl>
-            <a href="#reserve" className="btn btn-primary">Save Us a Seat</a>
+            <Link to="/reservations" className="btn btn-primary">Save Us a Seat</Link>
           </aside>
         </div>
       </section>

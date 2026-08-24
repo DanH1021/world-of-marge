@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 
@@ -18,6 +19,12 @@ import Photos from './pages/Photos';
 import Gallery from './pages/Gallery';
 import FindYourMarges from './pages/FindYourMarges';
 import NotFound from './pages/NotFound';
+
+// Lazy-loaded so the Firebase SDK (used only by the reservations flow)
+// doesn't get pulled into every page's bundle — only visitors who reach
+// these routes download it.
+const Reservations = lazy(() => import('./pages/Reservations'));
+const ManageReservation = lazy(() => import('./pages/ManageReservation'));
 
 export default function App() {
   return (
@@ -45,6 +52,23 @@ export default function App() {
         <Route path="/photos/:slug" element={<Gallery />} />
 
         <Route path="/find-your-marges" element={<FindYourMarges />} />
+
+        <Route
+          path="/reservations"
+          element={
+            <Suspense fallback={<div className="section container"><p className="eyebrow">Loading&hellip;</p></div>}>
+              <Reservations />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/reservations/manage"
+          element={
+            <Suspense fallback={<div className="section container"><p className="eyebrow">Loading&hellip;</p></div>}>
+              <ManageReservation />
+            </Suspense>
+          }
+        />
 
         <Route path="*" element={<NotFound />} />
       </Route>

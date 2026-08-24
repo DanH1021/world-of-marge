@@ -1,0 +1,126 @@
+.manage-container {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.manage-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.manage-tab {
+  padding: 12px 20px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+.manage-tab.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.manage-form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.manage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 1 200px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.manage-field input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: var(--radius);
+}
+.manage-field input:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.manage-note {
+  color: var(--ink-soft);
+}
+.manage-note-error {
+  font-weight: 600;
+  color: var(--rust-dark);
+}
+
+.manage-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.manage-card {
+  background: var(--paper-warm);
+  border: 1px solid var(--cream-line);
+  padding: 24px 26px;
+}
+.manage-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.manage-card-number {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--rust);
+  margin: 0;
+}
+.manage-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 10px;
+  border: 1px solid var(--cream-line);
+}
+.manage-status-confirmed {
+  background: var(--forest);
+  color: var(--paper);
+  border-color: var(--forest);
+}
+.manage-status-cancelled {
+  color: var(--ink-soft);
+}
+.manage-card-detail {
+  margin: 0 0 4px;
+}
+.manage-card-name {
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.manage-cancel-confirm {
+  background: var(--paper);
+  border: 1px solid var(--cream-line);
+  padding: 16px 18px;
+  margin-top: 8px;
+}
+.manage-cancel-confirm p {
+  margin: 0 0 12px;
+}
+.manage-cancel-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

@@ -85,7 +85,7 @@ export default function Header() {
               )
             )}
           </ul>
-          <Link to="/fargo/supper-club" className="btn btn-primary btn-sm nav-cta" onClick={() => setOpen(false)}>
+          <Link to="/reservations" className="btn btn-primary btn-sm nav-cta" onClick={() => setOpen(false)}>
             Save Us a Seat
           </Link>
         </nav>
