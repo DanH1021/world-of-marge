@@ -14,8 +14,8 @@ export const images = {
   heroOttertail: u('photo-1500375592092-40eb2168fd21', 2000), // lake dock sunrise
 
   // ---- Diner (Fargo) ----
-  dinerPancakes: u('photo-1528207776546-365bb710ee93'),
-  dinerSaladBar: u('photo-1540420773420-3366772f4999'),
+  dinerPancakes: '/photos/real/diner-pancakes.jpg', // real photography
+  dinerSaladBar: '/photos/real/diner-hashbrowns-spread.jpg', // real photography
   dinerCounter: u('photo-1554118811-1e0d58224f24'),
   dinerCoffee: u('photo-1495474472287-4d71bcdd2085'),
   dinerBooth: u('photo-1466978913421-dad2ebd01d17'),
@@ -23,7 +23,7 @@ export const images = {
   dinerShakerShelf: u('photo-1602167626998-3bf7d0e3a6f4'),
 
   // ---- Bar ----
-  barNeon: u('photo-1470337458703-46ad1756a187'),
+  barNeon: '/photos/real/bar-neon-cheers.jpg', // real photography
   barPour: u('photo-1470337458703-46ad1756a187'),
   barBasement: u('photo-1514362545857-3bc16c4c7d1b'),
   barPatio: u('photo-1521017432531-fbd92d768814'),
@@ -31,14 +31,14 @@ export const images = {
 
   // ---- Supper Club ----
   supperDinnerTable: u('photo-1414235077428-338989a2e8c0'),
-  supperSteak: u('photo-1544025162-d76694265947'),
+  supperSteak: '/photos/real/supper-club-steak-shakers.jpg', // real photography
   supperCocktail: u('photo-1470337458703-46ad1756a187'),
   supperInterior: u('photo-1414235077428-338989a2e8c0'),
   supperCandlelight: u('photo-1552566626-52f8b828add9'),
   supperWinePour: u('photo-1510812431401-41d2bd2722f3'),
 
   // ---- Lucky Lounge ----
-  loungeCards: u('photo-1541278107931-e006523892df'),
+  loungeCards: '/photos/real/lucky-lounge-cards-cocktails.jpg', // real photography
   loungeDice: u('photo-1596838132330-8b3b6ff8f14a'),
   loungeNeonDark: u('photo-1544161515-4ab6ce6db874'),
   loungeStainedGlass: u('photo-1545239351-1141bd82e8a6'),

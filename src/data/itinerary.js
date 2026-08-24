@@ -77,13 +77,13 @@ const ottertailPlans = {
     { time: 'Later', activity: 'We’ll see you tomorrow.', to: null },
   ],
   'date-night': [
-    { time: 'Tonight', activity: 'Ottertail keeps it simple — breakfast, lake, lunch, lake, repeat. For a proper date night, head to The Otter Supper Club, about 1.5 hours west.', to: null },
+    { time: 'Tonight', activity: 'Ottertail keeps it simple — breakfast, lake, lunch, lake, repeat. For a proper date night, head to The Otter Supper Club, right here in town.', to: null },
   ],
   drinks: [
-    { time: 'Tonight', activity: 'Grab a Bloody Mary at the diner — Ottertail doesn’t have a bar yet. The Otter Supper Club, about 1.5 hours west, has you covered for a proper night out.', to: null },
+    { time: 'Tonight', activity: 'Grab a Bloody Mary at the diner — Ottertail doesn’t have a bar yet. The Otter Supper Club has you covered for a proper night out.', to: null },
   ],
   celebrating: [
-    { time: 'Today', activity: 'Celebrate lake-country style: breakfast, lake, repeat. For the full night-out treatment, head to The Otter Supper Club, about 1.5 hours west.', to: null },
+    { time: 'Today', activity: 'Celebrate lake-country style: breakfast, lake, repeat. For the full night-out treatment, head to The Otter Supper Club, just down the road.', to: null },
   ],
 };
 

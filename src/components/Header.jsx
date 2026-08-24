@@ -25,7 +25,8 @@ export default function Header() {
       <a href="#main-content" className="skip-link">Skip to main content</a>
       <div className="header-bar container">
         <Link to="/" className="wordmark" aria-label="World of Marge's — home">
-          <span className="wordmark-hand">World of Marge&rsquo;s</span>
+          <span className="wordmark-text">World of</span>
+          <img src="/brand/marges-signature.png" alt="" className="wordmark-signature" />
         </Link>
 
         <button

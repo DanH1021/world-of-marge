@@ -16,16 +16,24 @@
 
 .wordmark {
   display: flex;
+  align-items: center;
+  gap: 9px;
   text-decoration: none;
   color: var(--ink);
   line-height: 1;
 }
-.wordmark-hand {
+.wordmark-text {
   font-family: var(--font-hand);
   font-weight: 700;
-  font-size: 2rem;
-  color: var(--rust);
+  font-size: 1.5rem;
+  color: var(--ink);
   display: inline-block;
+  transform: rotate(-2deg);
+}
+.wordmark-signature {
+  display: inline-block;
+  height: 34px;
+  width: auto;
   transform: rotate(-2deg);
 }
 

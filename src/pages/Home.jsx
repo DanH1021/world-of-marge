@@ -78,7 +78,9 @@ export default function Home() {
         <div className="container home-hero-inner">
           <div className="index-card home-hero-card tilt-a">
             <p className="eyebrow">Welcome to the</p>
-            <h1 id="home-hero-heading">World of Marge&rsquo;s</h1>
+            <h1 id="home-hero-heading">
+              World of <img src="/brand/marges-signature.png" alt="Marge's" className="hero-signature" />
+            </h1>
             <p className="home-hero-line hand-line">Breakfast. Dinner. Drinks. Downtown. Lake days. Late nights.</p>
             <p className="home-hero-intro">
               What started in a tiny basement bar in Downtown Fargo has grown into a collection of places
@@ -103,7 +105,9 @@ export default function Home() {
         <div className="container">
           <div className="inner-marge-head">
             <p className="eyebrow">Which one are you?</p>
-            <h2 id="inner-marge-heading">Find Your Inner Marge</h2>
+            <h2 id="inner-marge-heading">
+              Find Your Inner <img src="/brand/marges-signature-short.png" alt="Marge" className="inner-marge-signature" />
+            </h2>
             <p className="hand-line inner-marge-sub">
               five doors, five totally different nights out &mdash; pick whichever one sounds like you
             </p>

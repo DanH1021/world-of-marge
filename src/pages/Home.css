@@ -12,6 +12,15 @@
   color: var(--rust);
   font-size: clamp(2.4rem, 5.4vw, 3.8rem);
   margin-bottom: 0.28em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 14px;
+}
+.hero-signature {
+  display: inline-block;
+  height: clamp(38px, 8vw, 62px);
+  width: auto;
 }
 .home-hero-line {
   font-size: 1.4rem;
@@ -55,6 +64,18 @@
   margin: 0 auto 34px;
 }
 .inner-marge-head .eyebrow { display: block; }
+.inner-marge-head h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+.inner-marge-signature {
+  display: inline-block;
+  height: clamp(28px, 6vw, 42px);
+  width: auto;
+}
 .inner-marge-sub {
   font-size: 1.25rem;
   color: var(--ink-soft);

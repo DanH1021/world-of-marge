@@ -74,7 +74,7 @@ export default function DinerFargo() {
         <div className="container">
           <div className="photo-strip">
             <img src={images.dinerPancakes} alt="Stack of pancakes with syrup at Marge's Diner" className="tall" />
-            <img src={images.dinerSaladBar} alt="Marge's Diner salad bar spread" />
+            <img src={images.dinerSaladBar} alt="Hashbrowns, soup, and salad at Marge's Diner" />
             <img src={images.dinerShakerShelf} alt="Collection of vintage salt and pepper shakers on a shelf" />
           </div>
         </div>
