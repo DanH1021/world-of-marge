@@ -54,6 +54,7 @@ export const images = {
   // ---- Ottertail / lake ----
   dinerSweetPotato: '/photos/real/diner-sweet-potato-skins.jpg', // real photography
   dinerHashbrownsCrochet: '/photos/real/diner-hashbrowns-crochet.jpg', // real photography
+  dinerHashbrownsSpread: '/photos/real/diner-hashbrowns-spread.jpg', // real photography
   dinerSalad: '/photos/real/diner-salad.jpg', // real photography
   lakeDock: u('photo-1500375592092-40eb2168fd21'),
   lakeBreakfast: u('photo-1533089860892-a7c6f0a88666'),
