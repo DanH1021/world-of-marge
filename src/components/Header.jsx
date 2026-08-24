@@ -86,7 +86,7 @@ export default function Header() {
             )}
           </ul>
           <Link to="/reservations" className="btn btn-primary btn-sm nav-cta" onClick={() => setOpen(false)}>
-            Save Us a Seat
+            Supper Club Reservations Only
           </Link>
         </nav>
       </div>
