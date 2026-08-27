@@ -17,6 +17,21 @@
   color: inherit;
 }
 
+.res-policy {
+  margin: -24px 0 0;
+  padding: 14px 18px;
+  list-style: none;
+  background: var(--paper-warm);
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .res-step h2 {
   font-size: clamp(1.7rem, 4vw, 2.2rem);
   margin-bottom: 20px;

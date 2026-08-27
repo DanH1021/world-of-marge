@@ -43,7 +43,7 @@ export const concepts = {
     tag: 'Drinks + Patio',
     heroImage: images.barHero,
     address: 'Roberts Alley, Downtown Fargo',
-    hours: 'Tue–Sat, 6pm–2am',
+    hours: 'Tue–Thu, 6pm–midnight · Fri–Sat, 6pm–2am',
     personality: 'Intimate, casual neighborhood-bar personality. The original small basement bar where Marge’s began.',
     color: 'forest',
     social: { instagram: 'margesbarfargo', facebookUrl: 'https://www.facebook.com/profile.php?id=100063509833472' },

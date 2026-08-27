@@ -193,6 +193,11 @@ export default function Reservations() {
             Already have a reservation? <Link to="/reservations/manage">Manage it here</Link>.
           </p>
 
+          <ul className="res-policy">
+            <li>Guests must be 21 or older.</li>
+            <li>Same-day reservations must be booked by 3:00 PM.</li>
+          </ul>
+
           <div className="res-step">
             <p className="eyebrow">Step 1</p>
             <h2>Party Size &amp; Date</h2>

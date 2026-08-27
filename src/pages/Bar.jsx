@@ -46,7 +46,7 @@ export default function Bar() {
             <h3>Visit</h3>
             <dl>
               <div className="info-row"><dt>Address</dt><dd>Roberts Alley<br />Downtown Fargo</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>Tue&ndash;Sat<br />6pm&ndash;2am</dd></div>
+              <div className="info-row"><dt>Hours</dt><dd>Tue&ndash;Thu 6pm&ndash;midnight<br />Fri&ndash;Sat 6pm&ndash;2am</dd></div>
               <div className="info-row"><dt>Patio</dt><dd>Shared with the<br />Supper Club</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.bar.social} /></dd></div>
             </dl>
