@@ -6,11 +6,11 @@
 // ==========================================================================
 
 export const TABLES = [
-  { id: 'boothA', label: 'Booth 1', capacity: 6, times: ['16:00', '17:30', '19:00', '20:30'] },
-  { id: 'boothB', label: 'Booth 2', capacity: 6, times: ['16:15', '17:45', '19:15', '20:45'] },
-  { id: 'boothC', label: 'Booth 3', capacity: 6, times: ['16:30', '18:00', '19:30', '21:00'] },
-  { id: 'boothD', label: 'Booth 4', capacity: 6, times: ['16:45', '18:15', '19:45', '21:15'] },
-  { id: 'largeTable', label: 'Large Table (10-top)', capacity: 10, times: ['16:00', '17:30', '19:00', '20:30'] },
+  { id: 'boothA', label: '201', capacity: 6, times: ['16:00', '17:30', '19:00', '20:30'] },
+  { id: 'boothB', label: '203', capacity: 6, times: ['16:15', '17:45', '19:15', '20:45'] },
+  { id: 'boothC', label: '301', capacity: 6, times: ['16:30', '18:00', '19:30', '21:00'] },
+  { id: 'boothD', label: '401', capacity: 6, times: ['16:45', '18:15', '19:45', '21:15'] },
+  { id: 'largeTable', label: '202', capacity: 10, times: ['16:00', '17:30', '19:00', '20:30'] },
 ];
 
 // Every distinct time value across all 5 tables, in order — 16 total.
