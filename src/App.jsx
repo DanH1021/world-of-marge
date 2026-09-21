@@ -19,6 +19,7 @@ import Story from './pages/Story';
 import Photos from './pages/Photos';
 import Gallery from './pages/Gallery';
 import FindYourMarges from './pages/FindYourMarges';
+import Catering from './pages/Catering';
 import Careers from './pages/Careers';
 import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
@@ -76,6 +77,8 @@ export default function App() {
           <Route path="/photos/:slug" element={<Gallery />} />
 
           <Route path="/find-your-marges" element={<FindYourMarges />} />
+
+          <Route path="/catering" element={<Catering />} />
 
           <Route path="/careers" element={<Careers />} />
           <Route path="/privacy" element={<Privacy />} />
