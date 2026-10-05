@@ -2,6 +2,7 @@ import PageHero from '../components/PageHero';
 import ConceptCard from '../components/ConceptCard';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
+import { HoursAtAGlance } from '../components/Hours';
 
 export default function EatAndDrink() {
   return (
@@ -13,6 +14,18 @@ export default function EatAndDrink() {
         image={images.heroWorld}
         size="short"
       />
+
+      <section className="section-tight" id="hours">
+        <div className="container">
+          <div className="section-head">
+            <p className="eyebrow">When We&rsquo;re Open</p>
+            <h2>Hours at a Glance</h2>
+          </div>
+          <HoursAtAGlance
+            concepts={['dinerFargo', 'bar', 'supperClub', 'luckyLounge', 'dinerOttertail'].map((key) => ({ key, concept: concepts[key] }))}
+          />
+        </div>
+      </section>
 
       <section className="section">
         <div className="container">

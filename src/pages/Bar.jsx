@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
+import { HoursWeek } from '../components/Hours';
 import './Bar.css';
 
 export default function Bar() {
@@ -44,9 +45,9 @@ export default function Bar() {
 
           <aside className="info-panel bar-panel">
             <h3>Visit</h3>
+            <HoursWeek conceptKey="bar" />
             <dl>
               <div className="info-row"><dt>Address</dt><dd>Roberts Alley<br />Downtown Fargo</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>Tue&ndash;Thu 6pm&ndash;midnight<br />Fri&ndash;Sat 6pm&ndash;2am</dd></div>
               <div className="info-row"><dt>Patio</dt><dd>Shared with the<br />Supper Club</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.bar.social} /></dd></div>
             </dl>

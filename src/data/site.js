@@ -29,7 +29,6 @@ export const concepts = {
     tag: 'Breakfast + Lunch',
     heroImage: images.dinerPancakes,
     address: '220 N Broadway Dr, Fargo, ND',
-    hours: 'Open 7 days a week — 8am–2pm',
     personality:
       'Comfortable neighborhood diner. Breakfast and lunch. Downtown Fargo. Lots of personality without trying too hard.',
     color: 'rust',
@@ -44,7 +43,6 @@ export const concepts = {
     tag: 'Drinks + Patio',
     heroImage: images.barHero,
     address: 'Roberts Alley, Downtown Fargo',
-    hours: 'Tue–Thu, 6pm–midnight · Fri–Sat, 6pm–2am',
     personality: 'Intimate, casual neighborhood-bar personality. The original small basement bar where Marge’s began.',
     color: 'forest',
     social: { instagram: 'margesbarfargo', facebookUrl: 'https://www.facebook.com/profile.php?id=100063509833472' },
@@ -58,7 +56,6 @@ export const concepts = {
     tag: 'Dinner + Cocktails',
     heroImage: images.supperDinnerTable,
     address: 'Roberts Alley, Downtown Fargo',
-    hours: 'Dinner nightly — hours vary',
     personality: 'Classic Midwestern supper club inspiration. Nostalgic but not themed or kitschy. Warm, experiential dining.',
     color: 'forest',
     social: { instagram: null, facebook: 'margessupperclub' },
@@ -72,7 +69,6 @@ export const concepts = {
     tag: 'E-Tabs + Blackjack (Coming Soon)',
     heroImage: images.loungePattern,
     address: 'Roberts Alley, Downtown Fargo',
-    hours: 'Later — hours vary',
     personality: 'Visually darker and moodier than the main Supper Club. Playing-card and stained-glass visual elements.',
     color: 'ink',
   },
@@ -85,12 +81,14 @@ export const concepts = {
     tag: 'Breakfast + Lunch + Lake Days',
     heroImage: images.dinerHashbrownsCrochet,
     address: 'Ottertail, MN',
-    hours: 'Breakfast & lunch daily — hours vary by season',
     personality: 'Same Marge’s DNA as Fargo. Stronger Minnesota lake-country personality. Vacation / cabin / summer / lake-day atmosphere.',
     color: 'gold',
     social: { instagram: null, facebook: 'ottertailmarge' },
   },
 };
+
+// Each concept knows its own key (used to look up hours in ./hours.js).
+Object.entries(concepts).forEach(([key, concept]) => { concept.key = key; });
 
 export const conceptList = Object.values(concepts);
 

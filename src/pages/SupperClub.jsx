@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero';
 import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
+import { HoursWeek } from '../components/Hours';
 import './SupperClub.css';
 
 // Lazy-loaded so the Firebase SDK (used only by the live menu) doesn't get
@@ -52,9 +53,9 @@ export default function SupperClub() {
 
           <aside className="info-panel" id="reserve">
             <h3>Visit</h3>
+            <HoursWeek conceptKey="supperClub" />
             <dl>
               <div className="info-row"><dt>Address</dt><dd>Roberts Alley<br />Downtown Fargo</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>Dinner nightly<br />Hours vary</dd></div>
               <div className="info-row"><dt>Reservations</dt><dd>Thu–Sat, online</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.supperClub.social} /></dd></div>
             </dl>

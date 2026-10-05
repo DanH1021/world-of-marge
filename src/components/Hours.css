@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Hours — card summary, Visit-panel week list, and the at-a-glance table
+   ========================================================================== */
+
+/* ---- Card summary ---- */
+.hours-summary {
+  margin: 0 0 16px;
+  padding: 10px 0 0;
+  border-top: 1px dashed var(--cream-line);
+  font-size: 0.86rem;
+}
+.hours-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0;
+}
+.hours-summary dt {
+  font-weight: 700;
+  color: var(--ink);
+}
+.hours-summary dd {
+  margin: 0;
+  color: var(--ink-soft);
+  text-align: right;
+  white-space: nowrap;
+}
+.hours-summary-note {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ---- Visit panel: full week ---- */
+.hours-week {
+  margin: 0 0 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--cream-line);
+}
+.hours-week-title {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--rust);
+  margin: 0 0 10px;
+}
+.hours-week-note { margin: 0; font-size: 1rem; }
+.hours-week-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+.hours-week-table th,
+.hours-week-table td {
+  padding: 6px 0;
+  text-align: left;
+  font-weight: 600;
+}
+.hours-week-table td { text-align: right; white-space: nowrap; }
+.hours-week-table tr.is-closed th,
+.hours-week-table tr.is-closed td {
+  font-weight: 400;
+  opacity: 0.55;
+}
+.hours-week-table tr.is-today th,
+.hours-week-table tr.is-today td {
+  font-weight: 800;
+  opacity: 1;
+}
+.hours-today-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 2px;
+  background: var(--rust);
+  color: #fff;
+  border-radius: 2px;
+}
+/* Dark panels (Bar, Lucky Lounge) */
+.bar-panel .hours-week,
+.lucky-panel .hours-week { border-bottom-color: rgba(245, 236, 226, 0.16); }
+.bar-panel .hours-week-title,
+.lucky-panel .hours-week-title { color: var(--gold-soft); }
+.bar-panel .hours-today-tag { color: #1e140f; }
+.lucky-panel .hours-today-tag { background: var(--gold-soft); color: #0f2c46; }
+
+/* ---- At a glance (Eat & Drink) ---- */
+.hours-glance-wrap {
+  overflow-x: auto;
+  background: #fff;
+  box-shadow: var(--shadow-tight);
+  -webkit-overflow-scrolling: touch;
+}
+.hours-glance-wrap:focus-visible { outline: 2px solid var(--rust); outline-offset: 2px; }
+.hours-glance {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+.hours-glance th,
+.hours-glance td {
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--cream-line);
+  text-align: center;
+  vertical-align: middle;
+}
+.hours-glance thead th {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--paper-warm);
+}
+.hours-glance thead th.is-today { background: var(--rust); color: #fff; }
+.hours-glance abbr { text-decoration: none; }
+.hours-glance tbody th {
+  text-align: left;
+  min-width: 170px;
+  position: sticky;
+  left: 0;
+  background: #fff;
+}
+.hours-glance tbody th a {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hours-glance tbody th a:hover { color: var(--rust); text-decoration: underline; }
+.hours-glance-place {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.hours-glance td.is-open {
+  font-weight: 700;
+  color: var(--ink);
+  background: rgba(47, 107, 102, 0.1);
+  white-space: nowrap;
+}
+.hours-glance td.is-closed { color: var(--ink-soft); opacity: 0.5; }
+.hours-glance td.is-today { box-shadow: inset 2px 0 0 var(--rust), inset -2px 0 0 var(--rust); }
+.hours-glance-note { color: var(--ink-soft); font-style: italic; }
+.hours-glance-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  box-shadow: var(--shadow-tight);
+}
+.hours-glance-list li {
+  padding: 16px 18px 4px;
+  border-bottom: 1px solid var(--cream-line);
+}
+.hours-glance-list li:last-child { border-bottom: none; }
+.hours-glance-list-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hours-glance-list .hours-summary { margin-top: 8px; font-size: 0.95rem; }
+@media (max-width: 800px) {
+  .hours-glance-wrap { display: none; }
+  .hours-glance-list { display: block; }
+}

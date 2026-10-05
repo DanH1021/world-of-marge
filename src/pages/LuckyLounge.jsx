@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import { images } from '../data/placeholderImages';
+import { HoursWeek } from '../components/Hours';
 import './LuckyLounge.css';
 
 export default function LuckyLounge() {
@@ -38,9 +39,9 @@ export default function LuckyLounge() {
 
           <aside className="info-panel lucky-panel">
             <h3>Visit</h3>
+            <HoursWeek conceptKey="luckyLounge" />
             <dl>
               <div className="info-row"><dt>Location</dt><dd>Inside Marge&rsquo;s<br />Supper Club</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>Later<br />Hours vary</dd></div>
               <div className="info-row"><dt>Gaming</dt><dd>Responsible gaming<br />info available on request</dd></div>
             </dl>
           </aside>

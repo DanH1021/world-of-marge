@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
+import { HoursWeek } from '../components/Hours';
 import './Diner.css';
 
 const c = concepts.dinerFargo;
@@ -60,9 +61,9 @@ export default function DinerFargo() {
 
           <aside className="info-panel">
             <h3>Visit</h3>
+            <HoursWeek conceptKey="dinerFargo" />
             <dl>
               <div className="info-row"><dt>Address</dt><dd>220 N Broadway Dr<br />Fargo, ND</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>7 days a week<br />8am – 2pm</dd></div>
               <div className="info-row"><dt>Phone</dt><dd>(701) 555-0139</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.dinerFargo.social} /></dd></div>
             </dl>

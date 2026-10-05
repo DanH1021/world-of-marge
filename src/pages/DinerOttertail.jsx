@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import SocialLinks from '../components/SocialLinks';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
+import { HoursWeek } from '../components/Hours';
 import './Diner.css';
 
 export default function DinerOttertail() {
@@ -47,9 +48,9 @@ export default function DinerOttertail() {
 
           <aside className="info-panel">
             <h3>Visit</h3>
+            <HoursWeek conceptKey="dinerOttertail" />
             <dl>
               <div className="info-row"><dt>Address</dt><dd>Ottertail, MN</dd></div>
-              <div className="info-row"><dt>Hours</dt><dd>Breakfast &amp; lunch daily<br />Seasonal hours</dd></div>
               <div className="info-row"><dt>Vibe</dt><dd>Lake-day atmosphere</dd></div>
               <div className="info-row"><dt>Follow</dt><dd><SocialLinks social={concepts.dinerOttertail.social} /></dd></div>
             </dl>
