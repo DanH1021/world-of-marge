@@ -3,6 +3,7 @@ import ConceptCard from '../components/ConceptCard';
 import { images } from '../data/placeholderImages';
 import { concepts } from '../data/site';
 import { HoursAtAGlance } from '../components/Hours';
+import { reindeerSeasonActive } from '../data/reindeerRoom';
 
 export default function EatAndDrink() {
   return (
@@ -22,7 +23,7 @@ export default function EatAndDrink() {
             <h2>Hours at a Glance</h2>
           </div>
           <HoursAtAGlance
-            concepts={['dinerFargo', 'bar', 'supperClub', 'luckyLounge', 'dinerOttertail'].map((key) => ({ key, concept: concepts[key] }))}
+            concepts={['dinerFargo', 'bar', 'supperClub', 'luckyLounge', ...(reindeerSeasonActive() ? ['reindeerRoom'] : []), 'dinerOttertail'].map((key) => ({ key, concept: concepts[key] }))}
           />
         </div>
       </section>
@@ -38,6 +39,7 @@ export default function EatAndDrink() {
             <ConceptCard concept={concepts.bar} />
             <ConceptCard concept={concepts.supperClub} />
             <ConceptCard concept={concepts.luckyLounge} />
+            {reindeerSeasonActive() && <ConceptCard concept={concepts.reindeerRoom} />}
           </div>
         </div>
       </section>

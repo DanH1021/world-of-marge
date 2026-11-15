@@ -36,6 +36,7 @@ export const hours = {
     sat: '4pm – 11pm',
   },
   luckyLounge: null,
+  reindeerRoom: null, // seasonal — dated schedule lives in ./reindeerRoom.js
   dinerOttertail: {
     thu: DINER, fri: DINER, sat: DINER, sun: DINER,
   },
@@ -44,6 +45,7 @@ export const hours = {
 /** Note shown in place of a schedule when a concept's hours are null. */
 export const hoursNote = {
   luckyLounge: 'Hours vary',
+  reindeerRoom: 'Holiday pop-up: Thu – Sat 4pm – 9pm, Nov 27 – Dec 19, plus Wed, Dec 23',
 };
 
 /**

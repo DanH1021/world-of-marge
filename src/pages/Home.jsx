@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { images } from '../data/placeholderImages';
 import { conceptList, concepts } from '../data/site';
 import ConceptCard from '../components/ConceptCard';
+import ReindeerBanner from '../components/ReindeerBanner';
+import { reindeerSeasonActive } from '../data/reindeerRoom';
 import './Home.css';
 
 const innerMarges = [
@@ -101,6 +103,8 @@ export default function Home() {
         </div>
       </section>
 
+      <ReindeerBanner />
+
       <section className="section inner-marge" aria-labelledby="inner-marge-heading">
         <div className="container">
           <div className="inner-marge-head">
@@ -137,7 +141,7 @@ export default function Home() {
             <p>No matter what you are in the mood for, Marge has you covered.</p>
           </div>
           <div className="family-grid">
-            {conceptList.map((concept) => (
+            {conceptList.filter((c) => c.key !== 'reindeerRoom' || reindeerSeasonActive()).map((concept) => (
               <ConceptCard concept={concept} key={concept.slug} />
             ))}
           </div>

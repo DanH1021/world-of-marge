@@ -1,0 +1,41 @@
+.rr-banner {
+  background: #fffaf3;
+  border-top: 5px solid #12372a;
+  border-bottom: 10px solid transparent;
+  border-image: repeating-linear-gradient(45deg, #b3122e 0 10px, #fff 10px 20px) 0 0 10 0;
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.rr-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  color: #1f1a17;
+}
+.rr-banner-logo { width: 220px; height: auto; flex-shrink: 0; }
+.rr-banner-copy { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.rr-banner-title {
+  font-family: 'Mountains of Christmas', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.05;
+  color: #12372a;
+}
+.rr-banner-when { font-weight: 700; color: #6f655c; }
+.rr-banner-cta {
+  background: #b3122e;
+  color: #fff;
+  font-weight: 800;
+  padding: 12px 20px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+.rr-banner-inner:hover .rr-banner-cta { background: #950f26; }
+.rr-banner-inner:focus-visible { outline: 3px solid #e8b64c; outline-offset: -3px; }
+@media (max-width: 720px) {
+  .rr-banner-inner { flex-direction: column; text-align: center; gap: 12px; }
+  .rr-banner-logo { width: 240px; }
+  .rr-banner-cta { align-self: stretch; text-align: center; }
+}
