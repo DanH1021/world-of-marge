@@ -18,6 +18,8 @@ export const nav = [
   { label: 'Photos', to: '/photos' },
   { label: 'Find Your Marge’s', to: '/find-your-marges' },
   { label: 'Bar Catering', to: '/catering' },
+  // Seasonal — only shown while the Reindeer Room season is on (see Header.jsx)
+  { label: 'Reindeer Room', to: '/fargo/reindeer-room', seasonal: 'reindeerRoom' },
 ];
 
 export const concepts = {

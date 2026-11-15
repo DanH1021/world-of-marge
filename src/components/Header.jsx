@@ -1,9 +1,32 @@
 import { useState, useRef, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { nav } from '../data/site';
+import { reindeerStatus, formatNight, OPEN_NIGHTS, REINDEER_HOURS } from '../data/reindeerRoom';
 import './Header.css';
 
+function ReindeerStrip() {
+  const s = reindeerStatus();
+  if (s.state === 'over') return null;
+  let when;
+  if (s.state === 'open') when = 'Open now until 9pm';
+  else if (s.state === 'tonight') when = `Open tonight ${REINDEER_HOURS}`;
+  else if (s.next === OPEN_NIGHTS[0]) when = `Opens ${formatNight(s.next)}`;
+  else when = `Next open ${formatNight(s.next)}`;
+  return (
+    <Link to="/fargo/reindeer-room" className="rr-strip">
+      <span className="rr-strip-name">Marge&rsquo;s Reindeer Room</span>
+      <span className="rr-strip-sep" aria-hidden="true">&middot;</span>
+      <span>Holiday pop-up bar</span>
+      <span className="rr-strip-sep" aria-hidden="true">&middot;</span>
+      <span className="rr-strip-when">{when}</span>
+      <span className="rr-strip-cta">See the dates &rarr;</span>
+    </Link>
+  );
+}
+
 export default function Header() {
+  const seasonOn = reindeerStatus().state !== 'over';
+  const navItems = nav.filter((item) => !item.seasonal || seasonOn);
   const [open, setOpen] = useState(false);
   const [eatOpen, setEatOpen] = useState(false);
   const closeTimer = useRef(null);
@@ -23,6 +46,7 @@ export default function Header() {
   return (
     <header className="site-header brand-umbrella" role="banner">
       <a href="#main-content" className="skip-link">Skip to main content</a>
+      <ReindeerStrip />
       <div className="header-bar container">
         <Link to="/" className="wordmark" aria-label="World of Marge's — home">
           <span className="wordmark-text">World of</span>
@@ -45,7 +69,7 @@ export default function Header() {
           aria-label="Primary"
         >
           <ul>
-            {nav.map((item) =>
+            {navItems.map((item) =>
               item.children ? (
                 <li
                   key={item.label}
@@ -76,7 +100,7 @@ export default function Header() {
                   <NavLink
                     to={item.to}
                     end={item.to === '/'}
-                    className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}
+                    className={({ isActive }) => `nav-link${item.seasonal ? ' nav-link-festive' : ''}${isActive ? ' is-active' : ''}`}
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
