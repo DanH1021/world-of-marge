@@ -20,6 +20,11 @@ export const OPEN_NIGHTS = [
 ];
 export const FINAL_NIGHT = '2026-12-23';
 
+/** Ticketed special events shown on the Open Nights calendar. */
+export const SPECIAL_EVENTS = [
+  { date: '2026-12-20', name: 'Christmas Karaoke Brunch', tag: 'Karaoke Brunch', to: '/karaoke-brunch' },
+];
+
 export const location = {
   address: '212 Broadway',
   city: 'Fargo, ND',

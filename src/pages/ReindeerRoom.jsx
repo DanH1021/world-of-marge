@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
-  REINDEER_YEAR, REINDEER_HOURS, OPEN_NIGHTS, FINAL_NIGHT,
+  REINDEER_YEAR, REINDEER_HOURS, OPEN_NIGHTS, FINAL_NIGHT, SPECIAL_EVENTS,
   location, parking, menu, formatNight, reindeerStatus, seasonWeeks,
 } from '../data/reindeerRoom';
 import TicketEvent from '../components/TicketEvent';
@@ -43,6 +43,19 @@ function DatesCalendar() {
             const final = iso === FINAL_NIGHT;
             const past = iso < today;
             const showMonth = d === 1 || iso === week[0] && week === weeks[0];
+            const event = SPECIAL_EVENTS.find((e) => e.date === iso);
+            if (event) {
+              return (
+                <span role="cell" key={iso} className={`rr-cal-day is-event${past ? ' is-past' : ''}${iso === today ? ' is-today' : ''}`}>
+                  <Link to={event.to} className="rr-cal-event-link" aria-label={`${formatNight(iso, true)}: ${event.name}, ticketed event`}>
+                    <span className="rr-cal-num" aria-hidden="true">
+                      {showMonth && <small>{MONTHS[m - 1]} </small>}{d}
+                    </span>
+                    <span className="rr-cal-tag" aria-hidden="true">{event.tag}</span>
+                  </Link>
+                </span>
+              );
+            }
             return (
               <span
                 role="cell"
@@ -59,6 +72,10 @@ function DatesCalendar() {
           })}
         </div>
       ))}
+      <p className="rr-cal-legend">
+        <span><i className="rr-key rr-key-open" aria-hidden="true" /> Open {REINDEER_HOURS}</span>
+        <span><i className="rr-key rr-key-event" aria-hidden="true" /> Ticketed event &mdash; tap for tickets</span>
+      </p>
     </div>
   );
 }
@@ -155,16 +172,28 @@ export default function ReindeerRoom() {
         <div className="container">
           <div className="rr-head">
             <h2 id="rr-dates-heading" className="rr-script">Open Nights</h2>
-            <p>{OPEN_NIGHTS.length} nights, {REINDEER_HOURS} every night we&rsquo;re open.</p>
+            <p>
+              {OPEN_NIGHTS.length} nights, {REINDEER_HOURS} every night we&rsquo;re open &mdash; plus the{' '}
+              <Link to="/karaoke-brunch">Christmas Karaoke Brunch</Link> on Sunday, Dec 20.
+            </p>
           </div>
           <DatesCalendar />
           <ul className="rr-night-list">
-            {OPEN_NIGHTS.map((iso) => (
-              <li key={iso} className={iso === FINAL_NIGHT ? 'is-final' : ''}>
-                <span>{formatNight(iso, true)}</span>
-                <span>{iso === FINAL_NIGHT ? `Final night · ${REINDEER_HOURS}` : REINDEER_HOURS}</span>
-              </li>
-            ))}
+            {[...OPEN_NIGHTS.map((iso) => ({ iso })), ...SPECIAL_EVENTS.map((e) => ({ iso: e.date, event: e }))]
+              .sort((a, b) => a.iso.localeCompare(b.iso))
+              .map(({ iso, event }) =>
+                event ? (
+                  <li key={`${iso}-event`} className="is-event">
+                    <span>{formatNight(iso)}</span>
+                    <Link to={event.to}>{event.tag} &rarr;</Link>
+                  </li>
+                ) : (
+                  <li key={iso} className={iso === FINAL_NIGHT ? 'is-final' : ''}>
+                    <span>{formatNight(iso)}</span>
+                    <span>{iso === FINAL_NIGHT ? `Final night · ${REINDEER_HOURS}` : REINDEER_HOURS}</span>
+                  </li>
+                )
+              )}
           </ul>
         </div>
       </section>
