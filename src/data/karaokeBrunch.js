@@ -22,6 +22,12 @@ export const FALLBACK = {
 /** Event day in Fargo time — promos hide themselves after this date. */
 export const EVENT_DATE = '2026-12-20';
 
+/**
+ * Show customers how many tickets are left? Off by request — set to true to
+ * bring back "N tickets left" / "Only N left!" (under LOW_STOCK).
+ */
+export const SHOW_REMAINING = false;
+
 /** Under this many tickets, the count gets the "Only N left!" treatment. */
 export const LOW_STOCK = 10;
 

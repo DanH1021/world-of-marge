@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import useTicketFeed from '../hooks/useTicketFeed';
-import { FALLBACK, FALLBACK_BUY_URL, LOW_STOCK } from '../data/karaokeBrunch';
+import { FALLBACK, FALLBACK_BUY_URL, LOW_STOCK, SHOW_REMAINING } from '../data/karaokeBrunch';
 import Waitlist from './Waitlist';
 import './TicketEvent.css';
 
@@ -19,7 +19,7 @@ function ticketState(feed) {
   // on_sale, still loading, or the feed failed: always offer the link.
   let left = '';
   if (feed.state === 'loading') left = 'Checking availability…';
-  else if (status === 'on_sale' && data.remaining !== null) {
+  else if (SHOW_REMAINING && status === 'on_sale' && data.remaining !== null) {
     const n = data.remaining;
     if (n === 1) left = 'Only 1 ticket left!';
     else if (n < LOW_STOCK) left = `Only ${n} tickets left!`;
@@ -30,7 +30,7 @@ function ticketState(feed) {
     label: 'Buy tickets',
     href: data?.buyUrl || FALLBACK_BUY_URL,
     left,
-    low: status === 'on_sale' && data.remaining !== null && data.remaining < LOW_STOCK,
+    low: SHOW_REMAINING && status === 'on_sale' && data.remaining !== null && data.remaining < LOW_STOCK,
   };
 }
 
