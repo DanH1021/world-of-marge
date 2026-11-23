@@ -121,3 +121,46 @@
   .ticket-promo { flex-direction: column; align-items: stretch; padding: 24px 20px; gap: 20px; }
   .ticket-promo-actions { min-width: 0; }
 }
+
+/* ---- Waitlist (sold out) ---- */
+.waitlist {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 2px dashed var(--cream-line);
+  scroll-margin-top: 140px;
+}
+.waitlist-title { font-size: 1.35rem; margin: 0 0 6px; }
+.waitlist-intro { margin: 0 0 14px; font-size: 0.92rem; color: var(--ink-soft); line-height: 1.5; }
+.waitlist-form { display: flex; flex-direction: column; }
+.waitlist-form label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 10px 0 5px;
+}
+.waitlist-optional { text-transform: none; letter-spacing: 0; font-weight: 500; }
+.waitlist-form input,
+.waitlist-form select {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  padding: 11px 12px;
+  border: 2px solid rgba(36, 31, 26, 0.35);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+}
+.waitlist-form input:focus-visible,
+.waitlist-form select:focus-visible { outline: 3px solid var(--forest); outline-offset: 1px; border-color: var(--forest); }
+.waitlist-row { display: grid; grid-template-columns: 1fr 110px; gap: 12px; }
+.waitlist-form .ticket-btn { margin-top: 18px; }
+.waitlist-form .ticket-btn:disabled { opacity: 0.7; cursor: wait; transform: none; }
+.waitlist-fine { margin: 10px 0 0; font-size: 0.8rem; color: var(--ink-soft); }
+.waitlist-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.waitlist-status { margin: 12px 0 0; font-weight: 700; min-height: 1.2em; }
+.waitlist-status.is-done { color: var(--forest); font-size: 1.05rem; }
+.waitlist-status.is-error { color: var(--rust-dark); }
+.waitlist-status.is-sending { color: var(--ink-soft); font-weight: 500; }
+@media (max-width: 400px) { .waitlist-row { grid-template-columns: 1fr; } }

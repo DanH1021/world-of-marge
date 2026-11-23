@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><meta name="robots" content="noindex" /><title>Forms</title></head>
+  <body>
+    <!--
+      Netlify Forms registration. Netlify reads this static file at deploy time
+      to learn which fields each form accepts. The real forms are rendered by
+      React and POST here. Keep the field names in sync with
+      src/components/Waitlist.jsx.
+    -->
+    <form name="karaoke-brunch-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="karaoke-brunch-waitlist" />
+      <input name="bot-field" />
+      <input name="event" />
+      <input name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="tickets"><option>1</option></select>
+    </form>
+  </body>
+</html>

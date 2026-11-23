@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import useTicketFeed from '../hooks/useTicketFeed';
 import { FALLBACK, FALLBACK_BUY_URL, LOW_STOCK } from '../data/karaokeBrunch';
+import Waitlist from './Waitlist';
 import './TicketEvent.css';
 
 /** Work out the button + tickets-left line from the feed result. */
@@ -9,7 +10,7 @@ function ticketState(feed) {
   const status = data?.status ?? null;
 
   if (status === 'sold_out') {
-    return { enabled: false, label: 'Sold out', left: 'Sold out — thanks, Fargo!' };
+    return { enabled: false, soldOut: true, label: 'Sold out', left: 'Sold out — but there’s a waitlist.' };
   }
   if (status === 'coming_soon') {
     return { enabled: false, label: 'Tickets coming soon', left: 'Tickets aren’t on sale yet. Check back soon.' };
@@ -89,7 +90,11 @@ export default function TicketEvent({ variant = 'full', headingLevel = 2 }) {
         <div className="ticket-promo-actions">
           <BuyButton t={t} />
           <TicketsLeft t={t} />
-          <Link to="/karaoke-brunch" className="ticket-details-link">Event details</Link>
+          {t.soldOut ? (
+            <Link to="/karaoke-brunch#waitlist" className="ticket-details-link">Join the waitlist</Link>
+          ) : (
+            <Link to="/karaoke-brunch" className="ticket-details-link">Event details</Link>
+          )}
         </div>
       </div>
     );
@@ -129,6 +134,7 @@ export default function TicketEvent({ variant = 'full', headingLevel = 2 }) {
         {t.enabled && data?.maxPerOrder && (
           <p className="ticket-card-note">Limit {data.maxPerOrder} per order.</p>
         )}
+        {t.soldOut && <Waitlist eventName={name} maxTickets={data?.maxPerOrder || 8} />}
         {t.enabled && (
           <p className="ticket-card-note">
             You&rsquo;ll check out securely on the Marge&rsquo;s Reindeer Room ticket page.
