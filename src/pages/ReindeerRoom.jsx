@@ -3,6 +3,8 @@ import {
   REINDEER_YEAR, REINDEER_HOURS, OPEN_NIGHTS, FINAL_NIGHT,
   location, parking, menu, formatNight, reindeerStatus, seasonWeeks,
 } from '../data/reindeerRoom';
+import TicketEvent from '../components/TicketEvent';
+import { karaokeBrunchUpcoming } from '../data/karaokeBrunch';
 import './ReindeerRoom.css';
 
 function StatusPill() {
@@ -166,6 +168,14 @@ export default function ReindeerRoom() {
           </ul>
         </div>
       </section>
+
+      {karaokeBrunchUpcoming() && (
+        <section className="rr-section rr-event" aria-label="Christmas Karaoke Brunch tickets">
+          <div className="container">
+            <TicketEvent variant="compact" />
+          </div>
+        </section>
+      )}
 
       <section className="rr-section rr-menu" id="menu" aria-labelledby="rr-menu-heading">
         <div className="container">

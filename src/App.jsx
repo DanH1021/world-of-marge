@@ -12,6 +12,7 @@ import Bar from './pages/Bar';
 import SupperClub from './pages/SupperClub';
 import LuckyLounge from './pages/LuckyLounge';
 import ReindeerRoom from './pages/ReindeerRoom';
+import KaraokeBrunch from './pages/KaraokeBrunch';
 import DinerOttertail from './pages/DinerOttertail';
 import Shakers from './pages/Shakers';
 import ShakerMuseum from './pages/ShakerMuseum';
@@ -66,6 +67,8 @@ export default function App() {
           <Route path="/fargo/supper-club/lucky-lounge" element={<LuckyLounge />} />
           <Route path="/fargo/reindeer-room" element={<ReindeerRoom />} />
           <Route path="/reindeer-room" element={<ReindeerRoom />} />
+          <Route path="/karaoke-brunch" element={<KaraokeBrunch />} />
+          <Route path="/events/karaoke-brunch" element={<KaraokeBrunch />} />
 
           <Route path="/ottertail" element={<OttertailExperience />} />
           <Route path="/ottertail/diner" element={<DinerOttertail />} />

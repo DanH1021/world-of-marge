@@ -318,3 +318,10 @@
   .rr-more-inner { flex-direction: column; text-align: center; }
   .rr-actions .rr-btn { flex: 1 1 100%; }
 }
+
+/* Karaoke Brunch promo on this page */
+.rr-event { padding-top: 0; }
+.reindeer-page .ticket-promo { border-radius: 18px; border-color: var(--pine); box-shadow: 6px 6px 0 var(--pine); }
+.reindeer-page .ticket-promo-title { font-family: var(--rr-display); color: var(--pine); }
+.reindeer-page .ticket-promo .btn-primary { background: var(--red); border-radius: 12px; }
+.reindeer-page .ticket-promo .btn-primary:hover { background: #950f26; }

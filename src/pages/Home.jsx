@@ -3,6 +3,8 @@ import { images } from '../data/placeholderImages';
 import { conceptList, concepts } from '../data/site';
 import ConceptCard from '../components/ConceptCard';
 import ReindeerBanner from '../components/ReindeerBanner';
+import TicketEvent from '../components/TicketEvent';
+import { karaokeBrunchUpcoming } from '../data/karaokeBrunch';
 import { reindeerSeasonActive } from '../data/reindeerRoom';
 import './Home.css';
 
@@ -104,6 +106,14 @@ export default function Home() {
       </section>
 
       <ReindeerBanner />
+
+      {karaokeBrunchUpcoming() && (
+        <section className="section-tight" aria-label="Christmas Karaoke Brunch tickets">
+          <div className="container">
+            <TicketEvent variant="compact" />
+          </div>
+        </section>
+      )}
 
       <section className="section inner-marge" aria-labelledby="inner-marge-heading">
         <div className="container">
